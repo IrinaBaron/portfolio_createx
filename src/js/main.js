@@ -1,44 +1,44 @@
 document.addEventListener('DOMContentLoaded', (e) => {
 
-  const swiper = new Swiper('.myswiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: false,
+  // const swiper = new Swiper('.myswiper', {
+  //   // Optional parameters
+  //   direction: 'horizontal',
+  //   loop: false,
 
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+  //   navigation: {
+  //     nextEl: '.swiper-button-next',
+  //     prevEl: '.swiper-button-prev',
+  //   },
 
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
+  //   pagination: {
+  //     el: '.swiper-pagination',
+  //     clickable: true,
+  //   },
 
-  });
+  // });
 
-  const swiper1 = new Swiper('.swiper2', {
+  // const swiper1 = new Swiper('.swiper2', {
 
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: true,
+  //   effect: "coverflow",
+  //   grabCursor: true,
+  //   centeredSlides: true,
 
-    slidesPerView: "auto",
-    coverflowEffect: {
-      rotate: 30,
-      scale: 1,
-      // stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows: false,
-    },
-    // Navigation arrows
-    navigation: {
-      nextEl: '.exclusive .swiper-button-next',
-      prevEl: '.exclusive .swiper-button-prev',
-    },
+  //   slidesPerView: "auto",
+  //   coverflowEffect: {
+  //     rotate: 30,
+  //     scale: 1,
+  //     // stretch: 0,
+  //     depth: 100,
+  //     modifier: 1,
+  //     slideShadows: false,
+  //   },
+  //   // Navigation arrows
+  //   navigation: {
+  //     nextEl: '.exclusive .swiper-button-next',
+  //     prevEl: '.exclusive .swiper-button-prev',
+  //   },
 
-  });
+  // });
 
   // -----------------------drop-menu--------------------
 
@@ -110,5 +110,26 @@ document.addEventListener('DOMContentLoaded', (e) => {
       window.scroll({ behavior: 'smooth' })
     })
   })
+
+  // -----------tabs------------
+
+let jsTriggers = document.querySelectorAll('.js-tab-trigger'),
+jsContents = document.querySelectorAll('.js-tab-content');
+
+jsTriggers.forEach(function (trigger) { // 1
+trigger.addEventListener('click', function () { // 2
+  // клик!
+  let id = this.getAttribute('data-tab'), // 1
+    content = document.querySelector('.js-tab-content[data-tab="' + id + '"]'), // 2
+    activeTrigger = document.querySelector('.js-tab-trigger.active'), // 3
+    activeContent = document.querySelector('.js-tab-content.active'); // 4
+
+  activeTrigger.classList.remove('active'); // 1
+  trigger.classList.add('active'); // 2
+
+  activeContent.classList.remove('active'); // 3
+  content.classList.add('active'); // 4
+});
+});
 
 })
