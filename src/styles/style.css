@@ -49,6 +49,7 @@ body {
   --color-dark: #1E212C;
   --color-title: #FF4242;  
   --color-orange: #FF3F3A;
+  --color-yellow: #FFCF2D;
 }
 
 *,
@@ -781,6 +782,148 @@ button:hover {
   right: -46px;
 }
 
+
+/* ---------team-------- */
+.team {
+  height: auto;
+  background-image: url('../images/team/team_back.png');
+}
+
+.team__container {
+  padding-top: 166px;
+}
+
+.team__wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.team__title {
+  margin-bottom: 0;
+}
+
+.team__btn {
+  display: flex;
+  align-self: flex-end;
+  width: auto;
+  height: auto;
+}
+
+.team .swiper-slide {
+  max-width: 285px;
+  width: 100%;
+}
+
+.swiper-button-next:after, 
+.swiper-button-prev:after {
+  content: '';
+}
+
+.team .swiper-button-prev {
+  position: unset;
+  width: 48px;
+  height: 48px;
+  border-radius: 50px;
+  background-image: url('../images/icons/arrow_left_black.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image .4s ease-in-out, background-color .4s ease-in-out;
+}
+
+.team .swiper-button-prev:hover {
+  background-image: url('../images/icons/arrow_left_white.svg');
+  background-color: var(--color-orange);
+}
+
+.team .swiper-button-prev.focus-visible {
+  background-image: url('../images/icons/arrow_left_white.svg');
+  background-color: var(--color-orange);
+}
+
+.team .swiper-button-next {
+  position: unset;
+  width: 48px;
+  height: 48px;
+  border-radius: 50px;
+  background-image: url('../images/icons/arrow_right_black.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image .4s ease-in-out, background-color .4s ease-in-out;
+}
+
+.team .swiper-button-next:hover {
+  background-image: url('../images/icons/arrow_right_white.svg');
+  background-color: var(--color-orange);
+}
+
+.team .swiper-button-next.focus-visible {
+  background-image: url('../images/icons/arrow_right_white.svg');
+  background-color: var(--color-orange);
+}
+
+.team__info {
+  position: relative;
+  margin-bottom: 16px;
+  border-radius: 4px;
+}
+
+.team__social {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  background: linear-gradient(180deg, rgba(30, 33, 44, 0) 43.9%, rgba(30, 33, 44, 0.03) 55.21%, rgba(30, 33, 44, 0.33) 68.73%, rgba(30, 33, 44, 0.56) 76.17%, rgba(30, 33, 44, 0.768225) 83.75%, rgba(30, 33, 44, 0.92) 91.49%, #1E212C 100%);
+  border-radius: 4px;
+}
+
+.team__social.show {
+  display: flex;
+  cursor: pointer;
+}
+
+.team__item:not(:last-child) {
+  margin-right: 12px;
+}
+
+.team__img {
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.team__link {
+  opacity: 0.6;
+  transition: opacity .4s ease-in-out;
+}
+
+.team__link:hover {
+  opacity: 1;
+}
+.team__name {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: var(--color-gray);
+}
+
+.team__position {
+  display: block;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: var(--color-light-gray);
+}
 
 /* -------------media---------------- */
 

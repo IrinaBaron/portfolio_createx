@@ -1,21 +1,41 @@
 document.addEventListener('DOMContentLoaded', (e) => {
 
-  // const swiper = new Swiper('.myswiper', {
-  //   // Optional parameters
-  //   direction: 'horizontal',
-  //   loop: false,
+  const swiper = new Swiper('.team__swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: false,
 
-  //   navigation: {
-  //     nextEl: '.swiper-button-next',
-  //     prevEl: '.swiper-button-prev',
-  //   },
+    navigation: {
+      nextEl: '.team .swiper-button-next',
+      prevEl: '.team .swiper-button-prev',
+    },
+    slidesPerView: 4,
+    spaceBetween: 30,
 
-  //   pagination: {
-  //     el: '.swiper-pagination',
-  //     clickable: true,
-  //   },
+  });
 
-  // });
+  let teams = document.querySelectorAll('.team__img');
+  let socials = document.querySelectorAll('.team__social');
+
+  for(let i = 0; i < teams.length; i++) {
+    let team = teams[i];
+    let soc = socials[i];
+
+    team.addEventListener('click', () => {
+      soc.classList.toggle('show');
+    })
+
+    soc.addEventListener('click', () => {
+      soc.classList.toggle('show')
+    })
+  }
+
+  // document.addEventListener('click', function(e) {
+  //   console.log(e.target)
+  //   if(e.target.closest('.team__img')) {
+      
+  //   }
+  // })
 
   // const swiper1 = new Swiper('.swiper2', {
 
