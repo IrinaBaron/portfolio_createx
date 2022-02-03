@@ -633,6 +633,10 @@ button:hover {
   text-align: center;
 }
 
+.lectures__list {
+  margin-bottom: 60px;
+}
+
 .lectures__item {
   display: flex;
   justify-content: space-between;
@@ -643,11 +647,11 @@ button:hover {
   transition: box-shadow .4s ease-in-out;
 }
 
-.lectures__btn:hover .lectures__item {
+/* .lectures__btn:hover .lectures__item {
   box-shadow: 0px 80px 80px -20px rgba(255, 63, 58, 0.16), 0px 30px 24px -10px rgba(255, 63, 58, 0.1), 0px 12px 10px -6px rgba(255, 63, 58, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
-}
+} */
 
-/* .lectures__item:hover {
+.lectures__item:hover {
   box-shadow: 0px 80px 80px -20px rgba(255, 63, 58, 0.16), 0px 30px 24px -10px rgba(255, 63, 58, 0.1), 0px 12px 10px -6px rgba(255, 63, 58, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
 }
 
@@ -655,7 +659,7 @@ button:hover {
   border-color: transparent;
   color: var(--color-for-dark);
   background-color:  var(--color-orange);
-} */
+}
 
 .lectures__item:not(:last-child) {
   margin-bottom: 24px;
@@ -717,6 +721,64 @@ button:hover {
   font-size: 14px;
   line-height: 44px;
   letter-spacing: 0.5px;
+}
+
+.lectures__want {
+  margin-right: 40px;
+}
+
+.lectures__more {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 42px;
+  color: var(--color-dark);
+}
+
+/* ---------sertificate------- */
+.sertificate__container {
+  position: relative;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.sertificate__wrap {
+  max-width: 32%;
+  width: 100%;
+}
+
+/* .sertificate__subtitle {
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-dark);
+} */
+.sertificate__title {
+  margin-bottom: 48px;
+}
+
+.sertificate__text {
+  margin-bottom: 32px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--color-gray);
+}
+
+.sertificate__list {
+  display: flex;
+}
+
+.sertificate__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.sertificate__picture {
+  position: absolute;
+  top: 120px;
+  right: -46px;
 }
 
 
