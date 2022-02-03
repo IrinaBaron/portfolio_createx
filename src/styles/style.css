@@ -747,15 +747,6 @@ button:hover {
   width: 100%;
 }
 
-/* .sertificate__subtitle {
-  margin-bottom: 8px;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: var(--color-dark);
-} */
 .sertificate__title {
   margin-bottom: 48px;
 }
@@ -791,6 +782,7 @@ button:hover {
 
 .team__container {
   padding-top: 166px;
+  padding-bottom: 90px;
 }
 
 .team__wrap {
@@ -810,7 +802,7 @@ button:hover {
   height: auto;
 }
 
-.team .swiper-slide {
+.team__container .swiper-slide {
   max-width: 285px;
   width: 100%;
 }
@@ -820,7 +812,7 @@ button:hover {
   content: '';
 }
 
-.team .swiper-button-prev {
+.team__container .swiper-button-prev {
   position: unset;
   width: 48px;
   height: 48px;
@@ -831,17 +823,17 @@ button:hover {
   transition: background-image .4s ease-in-out, background-color .4s ease-in-out;
 }
 
-.team .swiper-button-prev:hover {
+.team__container .swiper-button-prev:hover {
   background-image: url('../images/icons/arrow_left_white.svg');
   background-color: var(--color-orange);
 }
 
-.team .swiper-button-prev.focus-visible {
+.team__container .swiper-button-prev.focus-visible {
   background-image: url('../images/icons/arrow_left_white.svg');
   background-color: var(--color-orange);
 }
 
-.team .swiper-button-next {
+.team__container .swiper-button-next {
   position: unset;
   width: 48px;
   height: 48px;
@@ -852,12 +844,12 @@ button:hover {
   transition: background-image .4s ease-in-out, background-color .4s ease-in-out;
 }
 
-.team .swiper-button-next:hover {
+.team__container .swiper-button-next:hover {
   background-image: url('../images/icons/arrow_right_white.svg');
   background-color: var(--color-orange);
 }
 
-.team .swiper-button-next.focus-visible {
+.team__container .swiper-button-next.focus-visible {
   background-image: url('../images/icons/arrow_right_white.svg');
   background-color: var(--color-orange);
 }
@@ -906,6 +898,7 @@ button:hover {
 .team__link:hover {
   opacity: 1;
 }
+
 .team__name {
   display: block;
   margin-bottom: 4px;
@@ -924,6 +917,151 @@ button:hover {
   text-align: center;
   color: var(--color-light-gray);
 }
+
+/* ------say-------- */
+.say__container {
+  padding-top: 90px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.say__title {
+  margin-bottom: 60px;
+}
+
+.say__container_swiper {
+  position: relative;
+}
+
+.say__swiper {
+  box-sizing: border-box;
+  max-width: 83%;
+}
+
+.say__swiper .swiper-wrapper {
+  width: 1020px;
+}
+
+.say__swiper .swiper-slide {
+  box-sizing: border-box;
+  display: flex;
+  padding: 64px 105px;
+  width: 1020px;
+  width: 100%;
+  max-width: 1020px;
+  height: 344px;
+  border-radius: 4px;
+  background-color: var(--color-for-dark);
+  box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+}
+
+.say .swiper-button-prev {
+  width: 48px;
+  height: 48px;
+  border-radius: 50px;
+  background-image: url('../images/icons/arrow_left_black.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image .4s ease-in-out, background-color .4s ease-in-out;
+}
+
+.say .swiper-button-prev:hover {
+  background-image: url('../images/icons/arrow_left_white.svg');
+  background-color: var(--color-orange);
+}
+
+.say .swiper-button-prev.focus-visible {
+  background-image: url('../images/icons/arrow_left_white.svg');
+  background-color: var(--color-orange);
+}
+
+.say .swiper-button-next {
+  width: 48px;
+  height: 48px;
+  border-radius: 50px;
+  background-image: url('../images/icons/arrow_right_black.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image .4s ease-in-out, background-color .4s ease-in-out;
+}
+
+.say .swiper-button-next:hover {
+  background-image: url('../images/icons/arrow_right_white.svg');
+  background-color: var(--color-orange);
+}
+
+.say .swiper-button-next.focus-visible {
+  background-image: url('../images/icons/arrow_right_white.svg');
+  background-color: var(--color-orange);
+}
+
+.say__swiper .swiper-pagination-bullet {
+  bottom: 20px;
+  width: 30px;
+  height: 1px;
+  border-radius: 0;
+  background-color: #B3B7BC;
+}
+
+.say__swiper .swiper-pagination-bullet-active {
+  bottom: 20px;
+  width: 30px;
+  height: 1px;
+  border-radius: 0;
+  background-color: var(--color-gray);
+  z-index: 1000;
+}
+
+.say__img {
+  margin-right: 30px;
+  width: 28px;
+  height: 20px;
+}
+
+.say__wrap {
+  position: relative;
+  object-fit: contain;
+}
+
+.say__text {
+  margin-bottom: 24px;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--color-gray);
+  text-align: left;
+}
+
+.say__box {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+}
+
+.say__box_img {
+  margin-right: 20px;
+}
+
+.say__name {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--color-dark);
+  text-align: left;
+}
+
+.say__position {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--color-light-gray);
+  text-align: left;
+}
+
+
 
 /* -------------media---------------- */
 

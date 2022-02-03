@@ -2,15 +2,19 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
   const swiper = new Swiper('.team__swiper', {
     // Optional parameters
+    slidesPerView: 4,
+    spaceBetween: 30,
     direction: 'horizontal',
     loop: false,
 
     navigation: {
-      nextEl: '.team .swiper-button-next',
-      prevEl: '.team .swiper-button-prev',
+      nextEl: '.team__container .swiper-button-next',
+      prevEl: '.team__container .swiper-button-prev',
     },
-    slidesPerView: 4,
-    spaceBetween: 30,
+    a11y: {
+      prevSlideMessage: 'Previous slide',
+      nextSlideMessage: 'Next slide',
+    },
 
   });
 
@@ -30,35 +34,25 @@ document.addEventListener('DOMContentLoaded', (e) => {
     })
   }
 
-  // document.addEventListener('click', function(e) {
-  //   console.log(e.target)
-  //   if(e.target.closest('.team__img')) {
-      
-  //   }
-  // })
 
-  // const swiper1 = new Swiper('.swiper2', {
+  const swiper1 = new Swiper('.say__swiper', {
 
-  //   effect: "coverflow",
-  //   grabCursor: true,
-  //   centeredSlides: true,
+    slidesPerView: 1,
+    pagination: {
+      el: '.say__swiper .swiper-pagination',
+      type: 'bullets',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.say .swiper-button-next',
+      prevEl: '.say .swiper-button-prev',
+    },
+    a11y: {
+      prevSlideMessage: 'Previous slide',
+      nextSlideMessage: 'Next slide',
+    },
 
-  //   slidesPerView: "auto",
-  //   coverflowEffect: {
-  //     rotate: 30,
-  //     scale: 1,
-  //     // stretch: 0,
-  //     depth: 100,
-  //     modifier: 1,
-  //     slideShadows: false,
-  //   },
-  //   // Navigation arrows
-  //   navigation: {
-  //     nextEl: '.exclusive .swiper-button-next',
-  //     prevEl: '.exclusive .swiper-button-prev',
-  //   },
-
-  // });
+  });
 
   // -----------------------drop-menu--------------------
 
