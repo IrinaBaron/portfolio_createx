@@ -56,43 +56,42 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
   // -----------------------drop-menu--------------------
 
-  let dropS = document.querySelectorAll('.drop');
-  let listDrop = document.querySelectorAll('.drop__list');
+  // let dropS = document.querySelectorAll('.drop');
+  // let listDrop = document.querySelectorAll('.drop__list');
 
-  function searchShow() {
-    for (let i = 0; i < dropS.length; i++) {
+  // function searchShow() {
+  //   for (let i = 0; i < dropS.length; i++) {
 
-      if (dropS[i].classList.contains('show')) {
-        dropS[i].classList.remove('show');
-        listDrop[i].classList.remove('show');
-      }
-    }
+  //     if (dropS[i].classList.contains('show')) {
+  //       dropS[i].classList.remove('show');
+  //       listDrop[i].classList.remove('show');
+  //     }
+  //   }
  
-  }
+  // }
 
-  document.addEventListener('click', (e) => {
-    if (!e.target.closest(['.drop', '.drop__list', '.drop__item'])) {
-      searchShow();
-    }
-  })
+  // document.addEventListener('click', (e) => {
+  //   if (!e.target.closest(['.drop', '.drop__list', '.drop__item'])) {
+  //     searchShow();
+  //   }
+  // })
 
-  dropS.forEach(drop => {
+  // dropS.forEach(drop => {
 
-    drop.addEventListener('click', (e) => {
-      if (e.target.closest('.show')) {
-        e.target.classList.remove('show');
-        e.target.nextElementSibling.classList.remove('show');
-      } else {
-        searchShow();
-        e.target.classList.toggle('show');
-        e.target.nextElementSibling.classList.toggle('show'); 
-      }
-    })
-    return
-  })
+  //   drop.addEventListener('click', (e) => {
+  //     if (e.target.closest('.show')) {
+  //       e.target.classList.remove('show');
+  //       e.target.nextElementSibling.classList.remove('show');
+  //     } else {
+  //       searchShow();
+  //       e.target.classList.toggle('show');
+  //       e.target.nextElementSibling.classList.toggle('show'); 
+  //     }
+  //   })
+  //   return
+  // })
 
   // // -----------burger-------------
-
   document.querySelector('.header-burger').addEventListener('click', () => {
     document.querySelector('.header__item').classList.remove('active');
     document.body.classList.toggle('stop-scrolling');

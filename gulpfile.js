@@ -34,7 +34,7 @@ const resources = () => {
 }
 
 const styles = async () => {
-  return src(['src/styles/normalize.css', 'src/styles/style.css'])
+  return src(['src/styles/normalize.css', 'src/styles/style.css','src/**/*.css'])
     .pipe(pkg2.init())
     .pipe(pkg2.write())
     .pipe(concat('main.css'))
