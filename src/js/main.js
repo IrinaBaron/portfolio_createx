@@ -104,7 +104,8 @@ document.addEventListener('DOMContentLoaded', (e) => {
   const btnScroll = document.querySelector('.btn__scroll');
   window.addEventListener('scroll', () => {
     let scrollNum = window.pageYOffset;
-
+    document.querySelector('.footer__go');
+    document.querySelector('.footer__link_logo');
     if (scrollNum >= '100') {
       btnScroll.style.display = 'block';
       btnScroll.style.position = 'fixed';

@@ -1385,6 +1385,10 @@ button:hover {
   margin-bottom: 24px;
 }
 
+.footer__form {
+  position: relative;
+}
+
 .footer__input {
   margin-bottom: 12px;
   padding: 9px 12px;
@@ -1403,6 +1407,30 @@ button:hover {
   opacity: 0.6;
 }
 
+.footer__input.focus-visible {
+  border-color: var(--color-orange);
+}
+
+.footer__btn {
+  position: absolute;
+  top: 2px;
+  right: 1px;
+  padding: 2px;
+}
+
+.footer__btn svg path {
+  transition: fill .4s ease-in-out;
+}
+
+.footer__btn:hover svg path {
+  fill: var(--color-orange);
+}
+
+.footer__btn.focus-visible {
+  border-radius: 50px;
+  background-color: var(--color-orange);
+}
+
 .footer__more {
   font-weight: normal;
   font-size: 10px;
@@ -1410,6 +1438,50 @@ button:hover {
   color: var(--color-for-dark);
 }
 
+.footer__info {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.footer__info_container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer__span {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--color-for-dark);
+}
+
+.hearth {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-image: url('../images/icons/Heart.svg');
+  background-position: top 3px center;
+  background-repeat: no-repeat;
+  background-size: 16px;
+}
+
+.footer__go {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--color-for-dark);
+  opacity: 0.6;
+  transition: opacity .4s ease-in-out;
+}
+
+.footer__go:hover {
+  opacity: 1;
+}
+
+.footer__go.focus-visible {
+  opacity: 1;
+}
 
 
 /* -------------media---------------- */
