@@ -15,6 +15,16 @@ document.addEventListener('DOMContentLoaded', (e) => {
       prevSlideMessage: 'Previous slide',
       nextSlideMessage: 'Next slide',
     },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 40,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 40,
+      }
+    }
 
   });
 
