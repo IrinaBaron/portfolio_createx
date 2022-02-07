@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
   let teams = document.querySelectorAll('.team__img');
   let socials = document.querySelectorAll('.team__social');
 
-  for(let i = 0; i < teams.length; i++) {
+  for (let i = 0; i < teams.length; i++) {
     let team = teams[i];
     let soc = socials[i];
 
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
   //       listDrop[i].classList.remove('show');
   //     }
   //   }
- 
+
   // }
 
   // document.addEventListener('click', (e) => {
@@ -107,6 +107,9 @@ document.addEventListener('DOMContentLoaded', (e) => {
     document.body.classList.toggle('stop-scrolling');
     document.querySelector('.header-burger').classList.toggle('active');
     document.querySelector('.header__nav').classList.toggle('active');
+    if (document.documentElement.clientWidth <= 575) {
+      document.querySelector('.header__wrap').classList.toggle('active');
+    }
   })
 
   // ------------scroll--------------
@@ -137,23 +140,23 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
   // -----------tabs------------
 
-let jsTriggers = document.querySelectorAll('.js-tab-trigger'),
-jsContents = document.querySelectorAll('.js-tab-content');
+  let jsTriggers = document.querySelectorAll('.js-tab-trigger'),
+    jsContents = document.querySelectorAll('.js-tab-content');
 
-jsTriggers.forEach(function (trigger) { // 1
-trigger.addEventListener('click', function () { // 2
-  // клик!
-  let id = this.getAttribute('data-tab'), // 1
-    content = document.querySelector('.js-tab-content[data-tab="' + id + '"]'), // 2
-    activeTrigger = document.querySelector('.js-tab-trigger.active'), // 3
-    activeContent = document.querySelector('.js-tab-content.active'); // 4
+  jsTriggers.forEach(function (trigger) { // 1
+    trigger.addEventListener('click', function () { // 2
+      // клик!
+      let id = this.getAttribute('data-tab'), // 1
+        content = document.querySelector('.js-tab-content[data-tab="' + id + '"]'), // 2
+        activeTrigger = document.querySelector('.js-tab-trigger.active'), // 3
+        activeContent = document.querySelector('.js-tab-content.active'); // 4
 
-  activeTrigger.classList.remove('active'); // 1
-  trigger.classList.add('active'); // 2
+      activeTrigger.classList.remove('active'); // 1
+      trigger.classList.add('active'); // 2
 
-  activeContent.classList.remove('active'); // 3
-  content.classList.add('active'); // 4
-});
-});
+      activeContent.classList.remove('active'); // 3
+      content.classList.add('active'); // 4
+    });
+  });
 
 })

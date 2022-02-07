@@ -241,10 +241,6 @@ button:hover {
   align-items: center;
 }
 
-/* .header__item {
-  position: relative;
-} */
-
 .header__item:not(:last-child) {
   margin-right: 40px;
 }
@@ -574,6 +570,7 @@ button:hover {
   color: #9A9CA5;
   border: 1px solid transparent;
   border-radius: 4px;
+  transition: color .4s ease-in-out;
 }
 
 .benefits__btn.active {
@@ -581,11 +578,27 @@ button:hover {
   border-color: var(--color-orange);
 }
 
+.benefits__btn:hover {
+  color: var(--color-orange);
+}
+
+.benefits__btn.focus-visible {
+  color: var(--color-orange);
+}
+
 .benefits__btn svg path{
   fill:  #9A9CA5;
 }
 
 .benefits__btn.active svg path {
+  fill: var(--color-orange);
+}
+
+.benefits__btn:hover svg path {
+  fill: var(--color-orange);
+}
+
+.benefits__btn.focus-visible svg path {
   fill: var(--color-orange);
 }
 
