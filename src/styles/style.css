@@ -46,6 +46,7 @@ body {
   --color-for-dark: #FFFFFF;
   --color-gray: #424551;
   --color-light-gray: #787A80;
+  --color-light: #9A9CA5;
   --color-dark: #1E212C;
   --color-title: #FF4242;  
   --color-orange: #FF3F3A;
@@ -167,7 +168,7 @@ button:hover {
 }
 
 .btn-color.focus-visible {
-  border: 2px solid var(--color-dark);
+  border: 1px solid var(--color-dark);
 }
 
 .btn-uncolor {
@@ -266,6 +267,10 @@ button:hover {
   left: -3px;
   border: 1px solid var(--color-dark);
   border-radius: 4px;
+}
+
+.header__link.active {
+  color: var(--color-orange);
 }
 
 .header__wrap {
@@ -503,6 +508,10 @@ button:hover {
 
 .design {
   background-color: #F52F6E;
+}
+
+.development {
+  background-color: #7772F1;
 }
 
 .featured__name {
@@ -1503,6 +1512,4 @@ button:hover {
   opacity: 1;
 }
 
-
-/* -------------media---------------- */
 
