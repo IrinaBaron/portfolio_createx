@@ -152,3 +152,16 @@
   color: var(--color-orange);
   border-color: var(--color-orange);
 }
+
+.say {
+  height: auto;
+  background-image: url('../images/page2/testimonicals_back.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.page2-sertificate__container {
+  padding-top: 203px;
+  padding-bottom: 203px;
+}

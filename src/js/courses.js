@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', e => {
+  const btnVisible = document.querySelector('.online__more');
+  const inputSearchCourses = document.querySelector('.online__input');
+  const btnSearchCourses = document.querySelector('.online__search');
   let courses = document.querySelectorAll('.online__item');
-  console.log(courses.length);
 
   document.querySelector('.num-all').textContent = courses.length;
 
@@ -21,6 +23,72 @@ document.addEventListener('DOMContentLoaded', e => {
 
   let btns = document.querySelectorAll('.online__btn');
 
+  function hideElements() {
+    for (let k = 9; k < courses.length; k++) {
+      let course = courses[k];
+      course.style.display = 'none';
+    }
+    return
+  }
+  hideElements();
+
+  btnVisible.addEventListener('click', showHideElements);
+  btnVisible.addEventListener('keyup', (e) => {
+    if (e.code == 'Enter') {
+      showHideElements();
+      return
+    }
+  });
+
+  btnSearchCourses.addEventListener('click', showDirect);
+
+  inputSearchCourses.addEventListener('keyup', e => {
+    if (e.code == 'Enter') {
+      showDirect();
+    }
+  });
+
+  inputSearchCourses.addEventListener('input', showDirect);
+
+  function showDirect() {
+    let value = inputSearchCourses.value.toLowerCase().trim();
+    btnVisible.style.display = 'none'
+    courses.forEach(course => {
+      course.style.display = 'none';
+    });
+    if (value == '') {
+      value = 'all';
+      showNineElements();
+      return
+    }
+    searchCourse(value);
+
+    return
+  }
+
+  function showNineElements() {
+    btnVisible.style.display = 'unset';
+    courses.forEach(course => {
+      course.style.display = 'block';
+      hideElements();
+    });
+
+    document.querySelector('.online__list').style.justifyContent = 'space-between';
+  }
+
+  function showHideElements(e) {
+    if (e.target.textContent.includes('hide')) {
+      hideElements();
+      btnVisible.textContent = 'Load more';
+      return
+    }
+    courses.forEach(course => {
+      course.style.display = 'block';
+    });
+    btnVisible.textContent = 'hide elements';
+    return
+  }
+
   function searchActive() {
     for (let i = 0; i < btns.length; i++) {
       if (btns[i].classList.contains('active')) {
@@ -30,31 +98,34 @@ document.addEventListener('DOMContentLoaded', e => {
   }
 
   btns.forEach(btn => {
-    btn.addEventListener('click', function (e) {
-      courses.forEach(course => {
-        course.style.display = 'none';
-      });
-      console.log(e.target.textContent);
-      let elem = this.textContent.split(' ').slice(0,1);
-      if(elem[0].toLowerCase().includes('all')) {
-        courses.forEach(course => {
-          course.style.display = 'block';
-        });
-        document.querySelector('.online__list').style.justifyContent = 'space-between';
+    btn.addEventListener('click', tabDirect);
+    btn.addEventListener('keyup', e => {
+      if (e.code == 'Enter') {
+        tabDirect();
       }
-
-      searchCourse(elem[0].toLowerCase());
-     
-      if (this.closest('.active')) {
-        this.classList.remove('active');
-      } else {
-        searchActive();
-        this.classList.toggle('active');
-      };
-
-
     })
   })
+
+  function tabDirect(e) {
+    console.log(e.target) //не удалять
+    btnVisible.style.display = 'none'
+    courses.forEach(course => {
+      course.style.display = 'none';
+    });
+
+    let elem = this.textContent.split(' ').slice(0, 1);
+    if (elem[0].toLowerCase().includes('all')) {
+      showNineElements();
+    }
+    searchCourse(elem[0].toLowerCase());
+
+    if (this.closest('.active')) {
+      this.classList.remove('active');
+    } else {
+      searchActive();
+      this.classList.toggle('active');
+    };
+  }
 
   function searchCourse(direct) {
     
@@ -64,8 +135,9 @@ document.addEventListener('DOMContentLoaded', e => {
       let mainParent = parent.parentElement;
       mainParent.style.display = 'block';
       document.querySelector('.online__list').style.justifyContent = 'space-around';
-    })
+    });
+    return
   }
 
-  
+
 })
