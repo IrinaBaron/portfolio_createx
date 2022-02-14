@@ -61,6 +61,12 @@
   border-color: var(--color-orange);
 }
 
+.online__btn.active,
+.online__btn.active .online__num {
+  color: var(--color-orange);
+  border-color: var(--color-orange);
+}
+
 .online__list {
   margin-bottom: 81px;
 }
