@@ -158,10 +158,20 @@
   background-image: url('../images/page2/testimonicals_back.png');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .page2-sertificate__container {
   padding-top: 203px;
   padding-bottom: 203px;
+}
+
+@media (max-width: 1224px) {
+  .online__input {
+    width: auto;
+  }
+
+  .online__btn {
+    padding: 10px 15px;
+  }
 }
