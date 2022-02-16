@@ -80,26 +80,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
   // }
 
-  // document.addEventListener('click', (e) => {
-  //   if (!e.target.closest(['.drop', '.drop__list', '.drop__item'])) {
-  //     searchShow();
-  //   }
-  // })
-
-  // dropS.forEach(drop => {
-
-  //   drop.addEventListener('click', (e) => {
-  //     if (e.target.closest('.show')) {
-  //       e.target.classList.remove('show');
-  //       e.target.nextElementSibling.classList.remove('show');
-  //     } else {
-  //       searchShow();
-  //       e.target.classList.toggle('show');
-  //       e.target.nextElementSibling.classList.toggle('show'); 
-  //     }
-  //   })
-  //   return
-  // })
+ 
 
   // // -----------burger-------------
   document.querySelector('.header-burger').addEventListener('click', () => {

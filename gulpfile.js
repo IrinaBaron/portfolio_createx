@@ -34,7 +34,7 @@ const resources = () => {
 }
 
 const styles = async () => {
-  return src(['src/styles/normalize.css', 'src/styles/style.css','src/**/*.css'])
+  return src(['src/styles/normalize.css', 'src/styles/style.css','src/**/*.css', 'src/styles/media.css'])
     .pipe(pkg2.init())
     .pipe(pkg2.write())
     .pipe(concat('main.css'))
@@ -109,7 +109,7 @@ const prebuild = async function () {
   const ind = src('src/**/*.html')
     .pipe(dest('dist'))
   const resource = src('src/resources/**')
-  const css = src(['src/styles/normalize.css', 'src/styles/style.css', 'src/styles/style2.css', 'src/styles/**/*.css'])
+  const css = src(['src/styles/normalize.css', 'src/styles/style.css', 'src/styles/style2.css', 'src/styles/**/*.css', 'src/styles/media.css'])
     .pipe(concat('main.css'))
     .pipe(autoprefixes({
       cascade: false
@@ -123,8 +123,8 @@ const prebuild = async function () {
 
 const buildM = async function () {
   const js = src([
-    'src/js/**/*.js',
-    'src/js/main.js'
+    'src/js/main.js',
+    'src/js/**/*.js'
   ])
     .pipe(concat('app.js'))
     .pipe(dest('dist/js'))
