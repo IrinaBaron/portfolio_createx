@@ -109,7 +109,7 @@ const prebuild = async function () {
   const ind = src('src/**/*.html')
     .pipe(dest('dist'))
   const resource = src('src/resources/**')
-  const css = src(['src/styles/normalize.css', 'src/styles/**/*.css'])
+  const css = src(['src/styles/normalize.css', 'src/styles/style.css', 'src/styles/style2.css', 'src/styles/**/*.css'])
     .pipe(concat('main.css'))
     .pipe(autoprefixes({
       cascade: false
