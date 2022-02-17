@@ -64,6 +64,15 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
   });
 
+  // -------link-----
+  let linksCourses = document.querySelectorAll('.featured__item');
+
+  linksCourses.forEach(linkCourse => {
+    linkCourse.addEventListener('click', () => {
+      window.location.href='course.html';
+    })
+  })
+
   // -----------------------drop-menu--------------------
 
   // let dropS = document.querySelectorAll('.drop');

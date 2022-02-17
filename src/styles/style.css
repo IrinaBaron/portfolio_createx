@@ -47,6 +47,7 @@ body {
   --color-gray: #424551;
   --color-light-gray: #787A80;
   --color-light: #9A9CA5;
+  --light-light-gray: #D7DADD;
   --color-dark: #1E212C;
   --color-title: #FF4242;  
   --color-orange: #FF3F3A;
@@ -473,6 +474,7 @@ button:hover {
   border-radius: 5px;
   box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
   transition: box-shadow .4s ease-in-out;
+  cursor: pointer;
 }
 
 .featured__item:hover {
