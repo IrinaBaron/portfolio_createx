@@ -1,9 +1,6 @@
 document.addEventListener('DOMContentLoaded', e => {
   console.log(e.target)
-  // document.addEventListener('load', e => {
-    
-  // })
-  // if (window.location.pathname.includes('courses.html')) 
+  
   try {
     // console.log()
     const btnVisible = document.querySelector('.online__more');
@@ -151,6 +148,8 @@ document.addEventListener('DOMContentLoaded', e => {
       });
       return
     };
+
+    // console.log(localStorage.getItem(teacherLocal))
   } catch (error) {
     console.log(error);
   }

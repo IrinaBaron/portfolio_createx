@@ -66,12 +66,19 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
   // -------link-----
   let linksCourses = document.querySelectorAll('.featured__item');
+  // let teacherLocal = localStorage.getItem(teacherLocal);
 
   linksCourses.forEach(linkCourse => {
-    linkCourse.addEventListener('click', () => {
+    linkCourse.addEventListener('click', (e) => {
+      let teacher = linkCourse.querySelector('.featured__teacher');
+      // localStorage.setItem(teacher, teacherLocal);
+      console.log(teacher)
+      // e.preventDefault();
       window.location.href='course.html';
+      
     })
   })
+  // console.log(teacherLocal)
 
   // -----------------------drop-menu--------------------
 
