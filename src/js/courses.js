@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', e => {
-  console.log(e.target)
-  
+
   try {
+
+
     // console.log()
     const btnVisible = document.querySelector('.online__more');
     const inputSearchCourses = document.querySelector('.online__input');
@@ -148,6 +149,8 @@ document.addEventListener('DOMContentLoaded', e => {
       });
       return
     };
+
+
 
     // console.log(localStorage.getItem(teacherLocal))
   } catch (error) {

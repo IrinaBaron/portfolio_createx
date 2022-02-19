@@ -403,3 +403,72 @@
 .for-whom__item:not(:last-child) {
   margin-bottom: 20px;
 }
+
+/* ------course-program------ */
+.course-program__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.course-program__title {
+  margin-bottom: 60px;
+}
+
+.course-program__left {
+  max-width: 600px;
+}
+
+.course-program__item {
+  display: flex;
+}
+
+.course-program__icons {
+  margin-right: 20px;
+  height: auto;
+}
+
+.course-program__icon {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background-color: var(--color-orange);
+}
+
+.icon-span1 {
+  transform: translate(0,13px);
+}
+
+.icon-span2 {
+  transform: rotate(90deg) translate(11px,0);
+}
+
+.course-program__btn_span {
+  color: var(--color-orange);
+}
+
+.course-program__btn {
+  margin-bottom: 24px;
+  padding: 0;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--color-dark);
+  border: none;
+}
+
+.course-program__item.show .course-program__btn {
+  margin-bottom: 16px;
+}
+
+.course-program__item.show .course-program__text {
+  display: block;
+}
+
+.course-program__text {
+  display: none;
+  margin-bottom: 24px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--color-gray);
+}
