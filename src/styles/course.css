@@ -432,7 +432,6 @@
   width: 18px;
   height: 2px;
   background-color: var(--color-orange);
-  /* transition:  transform .4s ease-in-out; */
 }
 
 .icon-span1 {
@@ -481,4 +480,62 @@
 .course-program__img {
   width: fit-content;
   height: fit-content;
+}
+
+/* ----say---- */
+.course-say__container {
+  padding-top: 80px;
+  padding-bottom: 90px;
+}
+
+.course-registration__container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 90px;
+  padding-bottom: 100px;
+}
+
+.course-registration__img {
+  margin-right: 20px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.course-registration__wrap {
+  max-width: 495px;
+  width: 100%;
+}
+
+.course-registration__form {
+  flex-direction: column;
+}
+
+.course-registration__list {
+  flex-direction: column;
+  margin-right: 0;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.course-registration__item {
+  max-width: 100%;
+}
+
+.course-registration__item:not(:last-child) {
+  margin-right: 0;
+  margin-bottom: 24px;
+}
+
+.course-registration__label {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.course-registration__input {
+  padding: 13px 16px;
+}
+
+.course-registration__btn {
+  align-self: unset;
+  width: 100%;
 }
