@@ -1,25 +1,32 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   try {
-    let acc = document.querySelectorAll('.course-program__btn ');
-    console.log(acc);
-    for (let i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function () {
-        console.log('ok')
-        let panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-          panel.classList.remove("show");
-          panel.style.display = "none";
+    let accBtns = document.querySelectorAll('.course-program__btn');
+    let conts = document.querySelectorAll('.course-program__content');
+    let accIcons = document.querySelectorAll('.course-program__icons');
+    
+    accBtns.forEach(accBtn => {
+      accBtn.addEventListener('click', e => {
+        if (e.target.closest('.show')) {
+          e.target.classList.remove('show');
+          e.target.nextElementSibling.classList.remove('show');
+          e.target.parentNode.previousElementSibling.classList.remove('show');
         } else {
-          panel.style.display = "block";
-          panel.classList.add("show");
+          for (let i = 0; i < accBtns.length; i++) {
+            if (accBtns[i].classList.contains('show')) {
+              accBtns[i].classList.remove('show');
+              conts[i].classList.remove('show');
+              accIcons[i].classList.remove('show');
+            }
+          }
+          e.target.classList.toggle('show');
+          e.target.nextElementSibling.classList.toggle('show'); 
+          e.target.parentNode.previousElementSibling.classList.toggle('show')
         }
-        this.classList.toggle("show");
-        // panel.classList.toggle("show");
-        console.log(panel)
-        
-      });
-    }
+      })
+      return
+      })
+    
   } catch (error) {
     console.log(error)
   }
