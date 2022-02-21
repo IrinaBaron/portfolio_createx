@@ -7,6 +7,7 @@ import pkg from 'gulp';
 const { src, dest } = pkg1;
 import pkg1 from 'gulp';
 import concat from 'gulp-concat';
+import fileinclude from 'gulp-file-include';
 
 import htmlMin from 'gulp-htmlmin';
 import autoprefixes from 'gulp-autoprefixer';
@@ -45,8 +46,23 @@ const styles = async () => {
 
 const html = async () => {
   return src('src/**/*.html')
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: '@file'
+    }))
+    // .pipe(gulp.dest('./'))
     .pipe(dest('dist'))
     .pipe(browserSync.stream())
+}
+
+const htmlInclude = () => {
+  return src(['src/**/index.html', 'src/**/courses.html','src/**/*.html'])
+  .pipe(fileinclude({
+    prefix: '@@',
+    basepath: '@file'
+  }))
+  // .pipe(gulp.dest('./'))
+  .pipe(dest('dist'))
 }
 
 const htmlMinify = async () => {
@@ -158,6 +174,6 @@ const watchFiles = async () => {
 }
 
 
-export const dev = series(resources, parallel(styles, scripts, html, fonts), svgSprites, images, watchFiles)
-export const build = series(clean, htmlMinify, fonts, images, parallel(prebuild, buildM))
+export const dev = series(resources, parallel(styles, htmlInclude, scripts, html, fonts), svgSprites, images, watchFiles)
+export const build = series(clean, htmlMinify, htmlInclude, fonts, images, parallel(prebuild, buildM))
 

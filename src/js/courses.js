@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', e => {
+// document.addEventListener('DOMContentLoaded', e => {
 
   try {
 
@@ -156,4 +156,4 @@ document.addEventListener('DOMContentLoaded', e => {
   } catch (error) {
     console.log(error);
   }
-});
+// });
