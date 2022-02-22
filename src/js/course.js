@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const swiper2 = new Swiper('.check-courses__swiper', {
   
       slidesPerView: 2,
-      spaceBetween: 30,
+      spaceBetween: 29,
       navigation: {
         nextEl: '.check-courses .swiper-button-next',
         prevEl: '.check-courses .swiper-button-prev',
@@ -13,7 +13,12 @@ document.addEventListener('DOMContentLoaded', () => {
         prevSlideMessage: 'Previous slide',
         nextSlideMessage: 'Next slide',
       },
-  
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 40,
+        }
+      }
     });
 
 

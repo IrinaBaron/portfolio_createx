@@ -89,6 +89,53 @@
   .online__btn {
     padding: 10px 15px;
   }
+
+  .about-course__left {
+    padding-right: 10px;
+  }
+
+  .course-curator__img {
+    width: 45%;
+  }
+
+  .course-curator__wrap {
+    padding-left: 30px;
+  }
+
+  .learning-process__num::after {
+    max-width: 150px;
+  }
+
+  .discount__container {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .discount__btn {
+    width: 50%;
+  }
+
+  .for-whom__right {
+    width: 45%;
+  }
+
+  .course-program__left {
+    width: 50%;
+  }
+
+  .course-program__img {
+    width: 30%;
+    height: 30%;
+  }
+
+  .course-registration__img {
+    width: 45%;
+    height: 45%;
+  }
+
+  .featured__box {
+    padding: 15px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -540,6 +587,113 @@
     padding-bottom: 83px;
   }
 
+  .course-hero__container {
+    padding-bottom: 100px;
+  }
+
+  .about-course__container {
+    /* flex-direction: column; */
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .about-course__right {
+    position: relative;
+    padding: 20px 15px;
+  }
+
+  .about-course__text {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .course-curator__container {
+    padding-bottom: 45px;
+  }
+
+  .course-curator__img {
+    width: 35%;
+    height: 35%;
+  }
+
+  .learning-process__container {
+    padding-top: 45px;
+    padding-bottom: 100px;
+  }
+
+  .learning-process__item:not(:last-child) {
+    margin-right: 15px;
+  } 
+
+  .learning-process__num::after {
+    max-width: 80px;
+  }
+
+  .learning-process__item_title {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .learning-process__text {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .discount__form {
+    flex-direction: column;
+  }
+
+  .discount__form_list {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .discount__btn {
+    align-self: center;
+    width: 30%;
+  }
+
+  .for-whom__container {
+    flex-direction: column;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .for-whom__right {
+    width: 100%;
+  }
+
+  .course-program__left {
+    width: 65%;
+  }
+
+  .course-registration__btn {
+    width: 100%;
+  }
+
+  .check-courses__container .swiper-slide {
+    height: 155px;
+  }
+
+  .check-courses__container .featured__box {
+    padding: 15px;
+  }
+
+  .check-courses__container .featured__img {
+    width: 40%;
+  }
+
+  .check-courses__container .featured__name {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .check-courses__container .featured__teacher {
+    font-size: 12px;
+    line-height: 20px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -796,6 +950,102 @@
     width: 100%;
   }
 
+  .about-course__container {
+    flex-direction: column;
+    padding-bottom: 45px;
+  }
+
+  .about-course__left {
+    margin-bottom: 20px;
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .about-course__right {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .course-wrapper {
+    padding-top: 65px;
+  }
+
+  .course-curator__container {
+    flex-direction: column;
+    padding-top: 0;
+  }
+
+  .course-curator__img {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .course-curator__wrap {
+    padding-left: 0;
+  }
+
+  .learning-process__list {
+    flex-direction: column;
+  }
+
+  .learning-process__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .learning-process__num::after {
+    max-width: 80%;
+  }
+
+  .discount__form_list {
+    flex-direction: column;
+  }
+
+  .discount__form_item {
+    max-width: 100%;
+  }
+
+  .discount__form_item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+
+  .for-whom__container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .for-whom__title {
+    margin-bottom: 0;
+  }
+
+  .course-program__container {
+    padding-bottom: 0;
+  }
+
+  .course-registration__img {
+    width: 35%;
+    height: 35%;
+  }
+
+  .check-courses__container .swiper-slide {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .check-courses__container .featured__img {
+    width: 100%;
+  }
+
+  .check-courses__container .featured__box {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .course-wrapper {
+    padding-bottom: 65px;
+  }
 }
 
 @media (max-width: 570px) {
@@ -990,10 +1240,6 @@
     width: 100%;
   }
 
-  /* .sertificate__list {
-    flex-direction: column;
-  } */
-
   .sertificate__item {
     width: 33%;
   }
@@ -1089,6 +1335,52 @@
 
   .online__item:nth-child(2n+1) {
     margin-right: 0;
+  }
+
+  .discount__btn {
+    width: 100%;
+  }
+
+  .for-whom__list {
+    padding-top: 0;
+  }
+
+  .course-program__container {
+    flex-direction: column;
+  }
+
+  .course-program__left {
+    width: 100%;
+  }
+
+  .course-program__img {
+    width: 100%;
+  }
+
+  .course-registration__container {
+    flex-direction: column;
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  .course-registration__img {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .check-courses__container .featured__list {
+    justify-content: unset;
+  }
+
+  .check-courses__swiper {
+    margin-bottom: 40px;
+  }
+
+  .check-courses__question {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 20px;
   }
 
 }

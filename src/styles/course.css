@@ -377,7 +377,12 @@
 }
 
 .for-whom__left {
+  margin-bottom: 40px;
   max-width: 495px;
+}
+
+.for-whom__title {
+  margin-bottom: 0;
 }
 
 .for-whom__right {
@@ -458,6 +463,7 @@
   line-height: 30px;
   color: var(--color-dark);
   border: none;
+  text-align: left;
 }
 
 .course-program__text {
@@ -558,6 +564,7 @@
 }
 
 .check-courses__wrapper {
+  box-sizing: border-box;
   flex-wrap: nowrap;
 }
 
