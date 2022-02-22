@@ -1,6 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   try {
+    const swiper2 = new Swiper('.check-courses__swiper', {
+  
+      slidesPerView: 2,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: '.check-courses .swiper-button-next',
+        prevEl: '.check-courses .swiper-button-prev',
+      },
+      a11y: {
+        prevSlideMessage: 'Previous slide',
+        nextSlideMessage: 'Next slide',
+      },
+  
+    });
+
+
     let accBtns = document.querySelectorAll('.course-program__btn');
     let conts = document.querySelectorAll('.course-program__content');
     let accIcons = document.querySelectorAll('.course-program__icons');

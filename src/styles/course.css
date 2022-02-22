@@ -539,3 +539,44 @@
   align-self: unset;
   width: 100%;
 }
+
+/* -----check-courses----- */
+.check-courses__container {
+  padding-top: 120px;
+  padding-bottom: 180px;
+  text-align: center;
+}
+
+.check-courses__wrap {
+  margin-bottom: 60px;
+  text-align: left;
+}
+
+.check-courses__swiper {
+  margin-bottom: 80px;
+  text-align: left;
+}
+
+.check-courses__wrapper {
+  flex-wrap: nowrap;
+}
+
+.check-courses__container .swiper-slide {
+  max-width: 600px;
+}
+
+.check-courses__title {
+  margin-bottom: 0;
+}
+
+.check-courses .featured__item {
+  margin-bottom: 0;
+}
+
+.check-courses__question {
+  margin-right: 40px;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 42px;
+  color: var(--color-dark);
+}

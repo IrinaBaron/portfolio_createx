@@ -80,25 +80,7 @@
       })
     })
     // console.log(teacherLocal)
-  
-    // -----------------------drop-menu--------------------
-  
-    // let dropS = document.querySelectorAll('.drop');
-    // let listDrop = document.querySelectorAll('.drop__list');
-  
-    // function searchShow() {
-    //   for (let i = 0; i < dropS.length; i++) {
-  
-    //     if (dropS[i].classList.contains('show')) {
-    //       dropS[i].classList.remove('show');
-    //       listDrop[i].classList.remove('show');
-    //     }
-    //   }
-  
-    // }
-  
-   
-  
+
     // // -----------burger-------------
     document.querySelector('.header-burger').addEventListener('click', () => {
       document.querySelector('.header__item').classList.remove('active');

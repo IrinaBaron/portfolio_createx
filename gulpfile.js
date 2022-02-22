@@ -46,23 +46,13 @@ const styles = async () => {
 
 const html = async () => {
   return src('src/**/*.html')
-    .pipe(fileinclude({
-      prefix: '@@',
-      basepath: '@file'
-    }))
-    // .pipe(gulp.dest('./'))
+    // .pipe(fileinclude({
+    //   prefix: '@@',
+    //   basepath: '@file'
+    // }))
+    .pipe(fileinclude())
     .pipe(dest('dist'))
     .pipe(browserSync.stream())
-}
-
-const htmlInclude = () => {
-  return src(['src/**/index.html', 'src/**/courses.html','src/**/*.html'])
-  .pipe(fileinclude({
-    prefix: '@@',
-    basepath: '@file'
-  }))
-  // .pipe(gulp.dest('./'))
-  .pipe(dest('dist'))
 }
 
 const htmlMinify = async () => {
@@ -123,6 +113,7 @@ const images = () => {
 
 const prebuild = async function () {
   const ind = src('src/**/*.html')
+    .pipe(fileinclude())
     .pipe(dest('dist'))
   const resource = src('src/resources/**')
   const css = src(['src/styles/normalize.css', 'src/styles/style.css', 'src/styles/style2.css', 'src/styles/**/*.css', 'src/styles/media.css'])
@@ -154,8 +145,8 @@ const buildM = async function () {
 
 const watchFiles = async () => {
   watch('src/styles/**/*.css', styles)
-  watch('src/**/*.html', htmlMinify)
   watch('src/**/*.html', html)
+  watch('src/**/*.html', htmlMinify)
   watch([
     'src/images/**/*.jpg',
     'src/images/**/*.jpeg',
@@ -174,6 +165,6 @@ const watchFiles = async () => {
 }
 
 
-export const dev = series(resources, parallel(styles, htmlInclude, scripts, html, fonts), svgSprites, images, watchFiles)
-export const build = series(clean, htmlMinify, htmlInclude, fonts, images, parallel(prebuild, buildM))
+export const dev = series(resources, parallel(styles, scripts, html, fonts), svgSprites, images, watchFiles)
+export const build = series(clean, htmlMinify, fonts, images, parallel(prebuild, buildM))
 
