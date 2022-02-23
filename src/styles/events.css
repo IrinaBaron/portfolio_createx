@@ -1,0 +1,124 @@
+.events__container {
+  padding-top: 152px;
+  text-align: center;
+}
+
+.events__title {
+  margin-bottom: 60px;
+}
+
+.events__choice__wrap {
+  display: flex;
+  /* justify-content: space-between; */
+  margin-bottom: 60px;
+}
+
+.events__choice_list {
+  display: flex;
+  flex-grow: 1;
+  /* justify-content: space-between; */
+  margin-right: 40px;
+}
+
+.events__choice_item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.events-item01 {
+  max-width: 279px;
+  width: 100%;
+}
+
+.events-item02 {
+  max-width: 224px;
+}
+
+.events-item03 {
+  max-width: 233px;
+}
+
+.events-item04 {
+  max-width: 282px;
+}
+
+.events__choice_item:not(:last-child) {
+  margin-right: 39px;
+}
+
+.events__choice-what {
+  display: inline-block;
+  margin-right: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--color-gray);
+}
+
+.events__select,
+.events__option {
+  padding: 11px 16px 12px 16px;
+  max-width: 160px;
+  width: 100%;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--color-gray);
+  background: var(--color-for-dark);
+  border: 1px solid var(--light-light-gray);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.events__info {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--color-light-gray);
+}
+
+.events__input {
+  padding: 11px 16px 12px 16px;
+  background: var(--color-for-dark);
+  border: 1px solid var(--light-light-gray);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.events-show {
+  margin-right: 12px;
+  max-width: 72px;
+}
+
+.events-show::placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--color-gray);
+}
+
+.events-search {
+  max-width: 282px;
+  width: 100%;
+}
+
+.events-search::placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--color-light);
+}
+
+.events__wrap_btns {
+  align-self: center;
+}
+
+.events__btn {
+  padding: 0;
+  border: none;
+}
+
+.events__btn.active svg path {
+  fill: var(--color-orange);
+}
