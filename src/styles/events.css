@@ -141,6 +141,7 @@
 }
 
 .events__page {
+  width: 26px;
   font-weight: bold;
   font-size: 16px;
   line-height: 26px;
@@ -148,6 +149,10 @@
   border: 1px solid transparent;
   border-radius: 50%;
   transition: border-color .4s ease-in-out;
+}
+
+.events__page.active {
+  color: var(--color-orange);
 }
 
 .events__page:hover {
@@ -158,7 +163,7 @@
   width: 24px;
   height: 24px;
   border-radius: 50px;
-  background-image: url(../images/icons/arrow_left_black.svg);
+  background-image: url('../images/icons/arrow_left_black.svg');
   background-position: center;
   background-repeat: no-repeat;
   transition: background-image .4s ease-in-out, background-color .4s ease-in-out;
@@ -178,7 +183,7 @@
   width: 24px;
   height: 24px;
   border-radius: 50px;
-  background-image: url(../images/icons/arrow_right_black.svg);
+  background-image: url('../images/icons/arrow_right_black.svg');
   background-position: center;
   background-repeat: no-repeat;
   transition: background-image .4s ease-in-out, background-color .4s ease-in-out;
