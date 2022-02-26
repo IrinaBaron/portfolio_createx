@@ -11,7 +11,7 @@ try {
   };
   let pages;
   let btnsPages;
-  
+
   function createNumPages(value) {
     pages = Math.ceil(events.length / +value);
     for (let k = 0; k < pages; k++) {
@@ -50,6 +50,42 @@ try {
   }
   createNumPages(value);
   
+  document.querySelector('.events-next').addEventListener('click', (e) => {
+    e.preventDefault();
+    btnsPages = document.querySelectorAll('.events__page');
+
+    btnsPages.forEach( btn => {
+      let num = btn.textContent;
+      if(btn.classList.contains('active')) {
+        // let num = btn.textContent;
+        
+        cleanList();
+        
+        cleanBtnsPages();
+        // console.log(num);
+        btnsPages.forEach( btn => {
+          // console.log(num)
+          if(btn.textContent == (+num + 1)) {
+            btn.classList.add('active');
+            // return
+          }
+          // return
+        });
+        
+        for(let i = (+num * value); i < (value * (+num + 1)); i++) {
+          
+          
+          events[i].style.display = 'flex';
+          
+        }
+
+        // console.log(num)
+        
+        return
+      }
+      
+    })
+  })
 
   numShow.addEventListener('input', () => {
     value = numShow.value;
@@ -62,22 +98,6 @@ try {
     if (value === '') {
       value = 9;
     };
-
-    // btnsPages.forEach(btn => {
-
-    //   btn.addEventListener('click', (e) => {
-    //     e.preventDefault();
-    //     let num = e.target.textContent;
-    //     console.log('ok')
-    //     cleanList();
-    //     console.log((num - 1) * value);
-    //     for (let i = ((num - 1) * value); i < (value * num); i++) {
-    //       e.target.classList.add('active');
-    //       events[i].style.display = 'flex';
-    //     }
-    //     return
-    //   })
-    // })
     
     for (let j = 0; j < +value; j++) {
       document.querySelector('.events__btns_list').innerHTML = '';
@@ -85,7 +105,7 @@ try {
       
       events[j].style.display = 'flex';
     };
-    console.log(btnsPages.length)
+    
     return value;
   })
 
