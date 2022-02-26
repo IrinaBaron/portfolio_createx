@@ -131,9 +131,16 @@
   box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
 }
 
+.events__box_pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .events__btns_list {
   display: flex;
   justify-content: center;
+  margin-right: 15px;
 }
 
 .events__btns_item:not(:last-child) {
@@ -160,6 +167,7 @@
 }
 
 .events-prev {
+  margin-right: 15px;
   width: 24px;
   height: 24px;
   border-radius: 50px;

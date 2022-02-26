@@ -10,8 +10,8 @@ try {
     events[i].style.display = 'flex';
   };
   let pages;
-  // console.log(pages);
-
+  let btnsPages;
+  
   function createNumPages(value) {
     pages = Math.ceil(events.length / +value);
     for (let k = 0; k < pages; k++) {
@@ -21,17 +21,39 @@ try {
 
       btnPages.classList.add('events__page');
       btnPages.textContent = k + 1;
+      if(k === 0) {
+        btnPages.classList.add('active');
+      }
 
       li.append(btnPages);
       document.querySelector('.events__btns_list').append(li);
     }
+    btnsPages = document.querySelectorAll('.events__page');
+
+    btnsPages.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        
+        let num = e.target.textContent;
+        cleanList();
+        // console.log((num - 1) * value);
+        for (let i = ((num - 1) * value); i < (value * num); i++) {
+          cleanBtnsPages();
+          e.target.classList.add('active');
+          events[i].style.display = 'flex';
+        }
+        return
+      })
+      
+    })
+
   }
   createNumPages(value);
-
+  
 
   numShow.addEventListener('input', () => {
     value = numShow.value;
-    console.log(value);
+    // console.log(value);
     cleanList();
 
     if (value < 0) {
@@ -40,6 +62,7 @@ try {
     if (value === '') {
       value = 9;
     };
+
     // btnsPages.forEach(btn => {
 
     //   btn.addEventListener('click', (e) => {
@@ -55,35 +78,27 @@ try {
     //     return
     //   })
     // })
+    
     for (let j = 0; j < +value; j++) {
       document.querySelector('.events__btns_list').innerHTML = '';
       createNumPages(value);
+      
       events[j].style.display = 'flex';
     };
+    console.log(btnsPages.length)
     return value;
   })
 
-  let btnsPages = document.querySelectorAll('.events__page');
-
-  btnsPages.forEach(btn => {
-    btn.classList.remove('active');
-  })
-  // console.log(btnsPages.length)
-  btnsPages.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      // console.log(value)
-      let num = e.target.textContent;
-      cleanList();
-      console.log((num - 1) * value);
-      for (let i = ((num - 1) * value); i < (value * num); i++) {
-        e.target.classList.add('active');
-        events[i].style.display = 'flex';
-      }
-      return
+  
+  
+  function cleanBtnsPages() {
+    btnsPages.forEach(btn => {
+      btn.classList.remove('active');
     })
     
-  })
+  }
+  // console.log(btnsPages.length)
+  
 
   function cleanList() {
     events.forEach(event => {

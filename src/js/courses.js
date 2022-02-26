@@ -2,8 +2,6 @@
 
   try {
 
-
-    // console.log()
     const btnVisible = document.querySelector('.online__more');
     const inputSearchCourses = document.querySelector('.online__input');
     const btnSearchCourses = document.querySelector('.online__search');
