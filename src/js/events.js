@@ -53,6 +53,7 @@ try {
   btnsPages = document.querySelectorAll('.events__page');
   document.querySelector('.events-next').addEventListener('click', (e) => {
     e.preventDefault();
+    // document.querySelector('.events-prev').removeAttribute('disabled');
     cleanList();
     
     for (let i = 0; i < btnsPages.length; i++) {

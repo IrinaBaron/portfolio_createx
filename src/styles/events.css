@@ -1,3 +1,10 @@
+.events {
+  height: auto;
+  background-image: url('../images/events_back.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .events__container {
   padding-top: 152px;
   text-align: center;
@@ -9,14 +16,12 @@
 
 .events__choice__wrap {
   display: flex;
-  /* justify-content: space-between; */
   margin-bottom: 60px;
 }
 
 .events__choice_list {
   display: flex;
   flex-grow: 1;
-  /* justify-content: space-between; */
   margin-right: 40px;
 }
 
@@ -185,6 +190,11 @@
 .events-prev.focus-visible {
   background-image: url('../images/icons/arrow_left_white.svg');
   background-color: var(--color-orange);
+}
+
+.events-prev:disabled {
+  opacity: 0.5;
+  cursor: unset;
 }
 
 .events-next {
