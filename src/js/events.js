@@ -21,7 +21,7 @@ try {
 
       btnPages.classList.add('events__page');
       btnPages.textContent = k + 1;
-      if(k === 0) {
+      if (k === 0) {
         btnPages.classList.add('active');
       }
 
@@ -33,7 +33,7 @@ try {
     btnsPages.forEach(btn => {
       btn.addEventListener('click', (e) => {
         e.preventDefault();
-        
+
         let num = e.target.textContent;
         cleanList();
         // console.log((num - 1) * value);
@@ -44,47 +44,60 @@ try {
         }
         return
       })
-      
+
     })
 
   }
   createNumPages(value);
-  
+
+  btnsPages = document.querySelectorAll('.events__page');
   document.querySelector('.events-next').addEventListener('click', (e) => {
     e.preventDefault();
-    btnsPages = document.querySelectorAll('.events__page');
+    cleanList();
+    
+    for (let i = 0; i < btnsPages.length; i++) {
+      let btn = btnsPages[i];
 
-    btnsPages.forEach( btn => {
-      let num = btn.textContent;
-      if(btn.classList.contains('active')) {
-        // let num = btn.textContent;
-        
-        cleanList();
-        
+      if (btn.classList.contains('active')) {
         cleanBtnsPages();
-        // console.log(num);
-        btnsPages.forEach( btn => {
-          // console.log(num)
-          if(btn.textContent == (+num + 1)) {
-            btn.classList.add('active');
-            // return
-          }
-          // return
-        });
-        
-        for(let i = (+num * value); i < (value * (+num + 1)); i++) {
+        console.log(+btn.textContent + 1)
+        if ((+btn.textContent + 1) == (+btnsPages[i + 1].textContent)) {
+          cleanBtnsPages();
           
-          
-          events[i].style.display = 'flex';
-          
+          btnsPages[i + 1].classList.add('active');
         }
+        for (let k = (+btn.textContent * value); k < (value * (+btn.textContent + 1)); k++) {
+          events[k].style.display = 'flex';
 
-        // console.log(num)
-        
+        }
         return
       }
-      
-    })
+
+    }
+
+    return
+  });
+
+  document.querySelector('.events-prev').addEventListener('click', (e) => {
+    e.preventDefault();
+    cleanList();
+    
+    for (let i = 0; i < btnsPages.length; i++) {
+      let btn = btnsPages[i];
+
+      if (btn.classList.contains('active')) {
+        cleanBtnsPages();
+        if ((+btn.textContent - 1) == (+btnsPages[i - 1].textContent)) {
+          cleanBtnsPages();
+          btnsPages[i - 1].classList.add('active');
+        }
+        for (let k = ((+btn.textContent - 2) * value); k < (value * (+btn.textContent - 1)); k++) {
+          events[k].style.display = 'flex';
+        }
+        return
+      }
+    }
+    return
   })
 
   numShow.addEventListener('input', () => {
@@ -98,27 +111,24 @@ try {
     if (value === '') {
       value = 9;
     };
-    
+
     for (let j = 0; j < +value; j++) {
       document.querySelector('.events__btns_list').innerHTML = '';
       createNumPages(value);
-      
+
       events[j].style.display = 'flex';
     };
-    
-    return value;
-  })
 
-  
-  
+    return value;
+  });
+
+
   function cleanBtnsPages() {
     btnsPages.forEach(btn => {
       btn.classList.remove('active');
     })
-    
-  }
-  // console.log(btnsPages.length)
-  
+  };
+
 
   function cleanList() {
     events.forEach(event => {
