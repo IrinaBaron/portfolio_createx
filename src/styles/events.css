@@ -171,6 +171,11 @@
   border-color: var(--color-orange);
 }
 
+.events__page.focus-visible {
+  color: var(--color-orange);
+  border-color: var(--color-orange);
+}
+
 .events-prev {
   margin-right: 15px;
   width: 24px;
@@ -271,6 +276,7 @@
 
 .changed .lectures__box {
   margin-bottom: auto;
+  max-width: 100%;
 }
 
 .changed .lectures__info {
