@@ -36,7 +36,20 @@ try {
 
         let num = e.target.textContent;
         cleanList();
-        // console.log((num - 1) * value);
+
+        if(+num > 1) {
+          document.querySelector('.events-prev').removeAttribute('disabled');
+        } 
+        if(+num === 1) {
+          document.querySelector('.events-prev').setAttribute('disabled', true);
+        }
+        if((+num + 1) > btnsPages.length) {
+          console.log('ok')
+          document.querySelector('.events-next').setAttribute('disabled', true);
+        } else {
+          document.querySelector('.events-next').removeAttribute('disabled');
+        }
+
         for (let i = ((num - 1) * value); i < (value * num); i++) {
           cleanBtnsPages();
           e.target.classList.add('active');
@@ -63,23 +76,21 @@ try {
       if (btn.classList.contains('active')) {
         cleanBtnsPages();
         
-        if((+btn.textContent + 2) !== btnsPages.length) {
+        if((+btn.textContent + 2) > btnsPages.length) {
           document.querySelector('.events-next').setAttribute('disabled', true);
         }
         if ((+btn.textContent + 1) == (+btnsPages[i + 1].textContent)) {
           cleanBtnsPages();
-
           btnsPages[i + 1].classList.add('active');
         }
+
         for (let k = (+btn.textContent * value); k < (value * (+btn.textContent + 1)); k++) {
           events[k].style.display = 'flex';
 
         }
         return
       }
-
     }
-
     return
   });
 
