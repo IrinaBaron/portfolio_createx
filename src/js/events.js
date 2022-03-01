@@ -51,20 +51,24 @@ try {
   createNumPages(value);
 
   btnsPages = document.querySelectorAll('.events__page');
+
   document.querySelector('.events-next').addEventListener('click', (e) => {
     e.preventDefault();
-    // document.querySelector('.events-prev').removeAttribute('disabled');
+    document.querySelector('.events-prev').removeAttribute('disabled');
     cleanList();
-    
+
     for (let i = 0; i < btnsPages.length; i++) {
       let btn = btnsPages[i];
 
       if (btn.classList.contains('active')) {
         cleanBtnsPages();
-        console.log(+btn.textContent + 1)
+        
+        if((+btn.textContent + 2) !== btnsPages.length) {
+          document.querySelector('.events-next').setAttribute('disabled', true);
+        }
         if ((+btn.textContent + 1) == (+btnsPages[i + 1].textContent)) {
           cleanBtnsPages();
-          
+
           btnsPages[i + 1].classList.add('active');
         }
         for (let k = (+btn.textContent * value); k < (value * (+btn.textContent + 1)); k++) {
@@ -81,12 +85,17 @@ try {
 
   document.querySelector('.events-prev').addEventListener('click', (e) => {
     e.preventDefault();
+    document.querySelector('.events-next').removeAttribute('disabled');
     cleanList();
-    
+
     for (let i = 0; i < btnsPages.length; i++) {
       let btn = btnsPages[i];
 
       if (btn.classList.contains('active')) {
+        console.log(btn.textContent)
+        if ((+btn.textContent - 1) === 1) {
+          document.querySelector('.events-prev').setAttribute('disabled', true);
+        }
         cleanBtnsPages();
         if ((+btn.textContent - 1) == (+btnsPages[i - 1].textContent)) {
           cleanBtnsPages();
@@ -95,8 +104,11 @@ try {
         for (let k = ((+btn.textContent - 2) * value); k < (value * (+btn.textContent - 1)); k++) {
           events[k].style.display = 'flex';
         }
-        return
+
+
+        // return
       }
+
     }
     return
   })

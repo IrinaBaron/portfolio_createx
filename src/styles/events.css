@@ -192,7 +192,9 @@
   background-color: var(--color-orange);
 }
 
-.events-prev:disabled {
+.events-prev:disabled, .events-prev:hover:disabled {
+  background-image: url('../images/icons/arrow_left_black.svg');
+  background-color: unset;
   opacity: 0.5;
   cursor: unset;
 }
@@ -215,4 +217,11 @@
 .events-next.focus-visible {
   background-image: url('../images/icons/arrow_right_white.svg');
   background-color: var(--color-orange);
+}
+
+.events-next:disabled, .events-next:hover:disabled {
+  background-image: url('../images/icons/arrow_right_black.svg');
+  background-color: unset;
+  opacity: 0.5;
+  cursor: unset;
 }
