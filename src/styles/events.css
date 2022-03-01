@@ -225,3 +225,56 @@
   opacity: 0.5;
   cursor: unset;
 }
+
+.changed .events__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.changed .events__item {
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  max-width: 390px;
+  width: 100%;
+  max-height: 323px;
+  height: 323px;
+}
+
+.changed .lectures__btn {
+  width: 100%;
+}
+
+.changed .lectures__date {
+  margin-bottom: 4px;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 42px;
+  color: var(--color-orange);
+}
+
+.changed .lectures__month {
+  position: absolute;
+  top: 24px;
+  left: 65px;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 42px;
+  color: var(--color-orange);
+}
+
+.changed .lectures__time {
+  margin-bottom: 20px;
+}
+
+.changed .lectures__box {
+  margin-bottom: auto;
+}
+
+.changed .lectures__info {
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 150%;
+}

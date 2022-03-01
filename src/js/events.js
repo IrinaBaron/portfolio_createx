@@ -135,6 +135,22 @@ try {
     return value;
   });
 
+  const btnSquares = document.querySelector('.events-squares');
+  const btnRow = document.querySelector('.events-row');
+
+  btnSquares.addEventListener('click', (e) => {
+    e.preventDefault();
+    btnRow.classList.remove('active');
+    btnSquares.classList.add('active');
+    document.querySelector('.events__box').classList.add('changed');
+  })
+
+  btnRow.addEventListener('click', (e) => {
+    e.preventDefault();
+    btnSquares.classList.remove('active');
+    btnRow.classList.add('active');
+    document.querySelector('.events__box').classList.remove('changed');
+  })
 
   function cleanBtnsPages() {
     btnsPages.forEach(btn => {
