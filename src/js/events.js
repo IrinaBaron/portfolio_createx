@@ -2,7 +2,7 @@ try {
   let events = document.querySelectorAll('.events__item');
   console.log(events.length)
   let numShow = document.querySelector('.events-show');
-  document.querySelector('.events__btns_list').innerHTML = '';
+  // document.querySelector('.events__btns_list').innerHTML = '';
   cleanList();
   let value = 9;
   let pages;
@@ -107,7 +107,7 @@ try {
       let btn = btnsPages[i];
 
       if (btn.classList.contains('active')) {
-        console.log(btn.textContent)
+        
         if ((+btn.textContent - 1) === 1) {
           document.querySelector('.events-prev').setAttribute('disabled', true);
         }
@@ -120,8 +120,6 @@ try {
           events[k].style.display = 'flex';
         }
 
-
-        // return
       }
 
     }
@@ -130,7 +128,7 @@ try {
 
   numShow.addEventListener('input', () => {
     value = numShow.value;
-    // console.log(value);
+    
     cleanList();
 
     if (value < 0) {
@@ -139,7 +137,8 @@ try {
     if (value === '') {
       value = 9;
     };
-
+    document.querySelector('.events-prev').setAttribute('disabled', true);
+    document.querySelector('.events-next').removeAttribute('disabled');
     for (let j = 0; j < +value; j++) {
       document.querySelector('.events__btns_list').innerHTML = '';
       createNumPages(value);
@@ -178,6 +177,7 @@ try {
     events.forEach(event => {
       event.style.display = 'none';
     });
+    return
   }
 
 
