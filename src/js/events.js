@@ -67,10 +67,9 @@ try {
   }
   createNumPages(value);
 
-  btnsPages = document.querySelectorAll('.events__page');
-
   document.querySelector('.events-next').addEventListener('click', (e) => {
     e.preventDefault();
+    btnsPages = document.querySelectorAll('.events__page');
     document.querySelector('.events-prev').removeAttribute('disabled');
     cleanList();
 
@@ -100,6 +99,7 @@ try {
 
   document.querySelector('.events-prev').addEventListener('click', (e) => {
     e.preventDefault();
+    btnsPages = document.querySelectorAll('.events__page');
     document.querySelector('.events-next').removeAttribute('disabled');
     cleanList();
 
@@ -167,6 +167,7 @@ try {
   })
 
   function cleanBtnsPages() {
+    btnsPages = document.querySelectorAll('.events__page');
     btnsPages.forEach(btn => {
       btn.classList.remove('active');
     })
