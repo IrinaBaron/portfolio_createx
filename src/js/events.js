@@ -3,14 +3,19 @@ try {
   console.log(events.length)
   let numShow = document.querySelector('.events-show');
   document.querySelector('.events__btns_list').innerHTML = '';
-
-  let value = 9;
   cleanList();
-  for (let i = 0; i < +value; i++) {
-    events[i].style.display = 'flex';
-  };
+  let value = 9;
   let pages;
   let btnsPages;
+
+  function createVisibleCards() {
+    for (let i = 0; i < +value; i++) {
+      events[i].style.display = 'flex';
+    };
+    return
+  }
+  createVisibleCards()
+  
 
   function createNumPages(value) {
     pages = Math.ceil(events.length / +value);
@@ -44,7 +49,6 @@ try {
           document.querySelector('.events-prev').setAttribute('disabled', true);
         }
         if((+num + 1) > btnsPages.length) {
-          console.log('ok')
           document.querySelector('.events-next').setAttribute('disabled', true);
         } else {
           document.querySelector('.events-next').removeAttribute('disabled');
@@ -180,5 +184,5 @@ try {
 
 
 } catch (error) {
-  console.log(error)
+  console.log(error + 'page events')
 }
