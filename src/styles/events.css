@@ -144,6 +144,7 @@
 
 .events__btns_list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-right: 15px;
 }
