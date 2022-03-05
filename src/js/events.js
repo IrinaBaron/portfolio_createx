@@ -194,6 +194,10 @@ try {
     let elements = document.querySelectorAll('.lectures__info');
 
     elements.forEach(elem => {
+      if(e.target.value === '') {
+        createVisibleCards(value);
+        return
+      };
       if(elem.textContent.toLowerCase().includes(e.target.value)) {
         let parents = elem.parentNode;
         
@@ -202,10 +206,9 @@ try {
             events[i].style.display = 'flex';
           } ;
         };
+        return
       };
-      if(e.target.value === '') {
-        createVisibleCards(value);
-      };
+      
     })
   });
 
