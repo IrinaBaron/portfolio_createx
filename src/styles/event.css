@@ -1,0 +1,41 @@
+.event__subtitle {
+  color: var(--color-orange);
+  text-transform: uppercase;
+}
+
+.talk__wrap {
+  max-width: 600px;
+}
+
+.talk__link {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--color-orange);
+  letter-spacing: 1px;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  transition: opacity .4s ease-in-out;
+}
+
+.talk__link:hover {
+  opacity: 0.6;
+}
+
+.talk__link.focus-visible {
+  color: var(--color-orange);
+}
+
+.speaker__list {
+  margin-bottom: 40px;
+}
+
+.speaker__item {
+  filter: grayscale(100%);
+  transition: filter .4s ease-in-out;
+}
+
+.speaker__item:hover,
+.speaker__item.focus-visible {
+  filter: grayscale(0);
+}

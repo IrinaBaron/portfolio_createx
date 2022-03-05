@@ -212,6 +212,23 @@ try {
     })
   });
 
+  function clickOnEventsCard() {
+    
+    
+    events = document.querySelectorAll('.lectures__item');
+    events.forEach(event => {
+      event.addEventListener('click', e => {
+        window.location.href='event.html';
+      })
+      event.addEventListener('keyup', e => {
+        if (e.code == 'Enter') {
+          window.location.href='event.html';
+        }
+      })
+    })
+  }
+  clickOnEventsCard();
+
   function cleanBtnsPages() {
     btnsPages = document.querySelectorAll('.events__page');
     btnsPages.forEach(btn => {

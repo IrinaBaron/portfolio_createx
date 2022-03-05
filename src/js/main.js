@@ -73,13 +73,12 @@
       linkCourse.addEventListener('click', (e) => {
         let teacher = linkCourse.querySelector('.featured__teacher');
         // localStorage.setItem(teacher, teacherLocal);
-        console.log(teacher)
+        // console.log(teacher)
         // e.preventDefault();
         window.location.href='course.html';
         
       })
     })
-    // console.log(teacherLocal)
 
     // // -----------burger-------------
     document.querySelector('.header-burger').addEventListener('click', () => {
@@ -138,6 +137,7 @@
         content.classList.add('active'); // 4
       });
     });
+    clickOnEventsCard();
   } catch (error) {
     console.log(error)
   }

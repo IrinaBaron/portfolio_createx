@@ -78,8 +78,8 @@ const svgSprites = async () => {
 
 const scripts = async () => {
   return src([
-    'src/js/main.js',
     'src/js/**/*.js',
+    'src/js/main.js',
   ])
     .pipe(pkg2.init())
     .pipe(babel({

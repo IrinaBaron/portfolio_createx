@@ -74,6 +74,15 @@
   border: 1px solid var(--light-light-gray);
   box-sizing: border-box;
   border-radius: 4px;
+  cursor: pointer;
+}
+
+.events__option:hover {
+  background-color: var(--color-light-gray);
+}
+
+.events__select.focus-visible {
+  border-color: var(--color-orange);
 }
 
 .events__info {
@@ -89,6 +98,11 @@
   border: 1px solid var(--light-light-gray);
   box-sizing: border-box;
   border-radius: 4px;
+  cursor: pointer;
+}
+
+.events__input.focus-visible {
+  border-color: var(--color-orange);
 }
 
 .events-show {
@@ -120,8 +134,14 @@
 }
 
 .events__btn {
-  padding: 0;
-  border: none;
+  padding: 2px;
+  padding-bottom: 0;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.events__btn.focus-visible {
+  border-color: var(--color-orange);
 }
 
 .events__btn.active svg path {
