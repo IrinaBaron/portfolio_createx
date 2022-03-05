@@ -168,8 +168,7 @@ try {
   });
 
   document.getElementById('category').addEventListener('input', (e) => {
-    cleanList()
-    console.log(e.target.value)
+    cleanList();
     let categories = document.querySelectorAll('.lectures__online');
     
     categories.forEach(cat => {
@@ -180,16 +179,35 @@ try {
           
           if(events[i] == parents.parentNode) {
             events[i].style.display = 'flex';
-          } 
-        }
-      }
+          } ;
+        };
+      };
       if(e.target.value.includes('all')) {
-        console.log('ok')
-        createVisibleCards(value)
-      }
-    })
+        createVisibleCards(value);
+      };
+    });
     return
-  })
+  });
+
+  document.querySelector('.events-search').addEventListener('input', (e) => {
+    cleanList();
+    let elements = document.querySelectorAll('.lectures__info');
+
+    elements.forEach(elem => {
+      if(elem.textContent.toLowerCase().includes(e.target.value)) {
+        let parents = elem.parentNode;
+        
+        for(let i = 0; i < events.length; i++) {
+          if(events[i] == parents.parentNode) {
+            events[i].style.display = 'flex';
+          } ;
+        };
+      };
+      if(e.target.value === '') {
+        createVisibleCards(value);
+      };
+    })
+  });
 
   function cleanBtnsPages() {
     btnsPages = document.querySelectorAll('.events__page');
