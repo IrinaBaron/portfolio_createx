@@ -39,3 +39,71 @@
 .speaker__item.focus-visible {
   filter: grayscale(0);
 }
+
+.benefit-from__container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 90px;
+  padding-bottom: 180px;
+}
+
+.benefit-from__left {
+  margin-right: 40px;
+  max-width: 495px;
+}
+
+.benefit-from__right {
+  padding-top: 32px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.miss-events__container {
+  display: flex;
+  justify-content: space-between;
+  /* padding-top: 90px; */
+  padding: 60px 105px 60px 103px;
+  height: auto;
+  background-image: url('../images/page_event/event_subsc_back.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.miss-events__wrap {
+  max-width: 600px;
+  width: 100%;
+}
+
+.miss-events__title {
+  margin-bottom: 48px;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 42px;
+  color: var(--color-dark);
+}
+
+.miss-events__form {
+  display: flex;
+}
+
+.miss-events__input {
+  margin-right: 24px;
+  padding: 13px 16px;
+  max-width: 422px;
+  width: 70%;
+  background: var(--color-for-dark);
+  border: 1px solid var(--light-light-gray);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.miss-events__input.focus-visible {
+  border-color: var(--color-orange);
+}
+
+.miss-events__input::placeholder {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--color-light);
+}
