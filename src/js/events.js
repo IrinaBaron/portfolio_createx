@@ -1,5 +1,5 @@
 try {
-  let events = document.querySelectorAll('.events__item');
+  let events = document.querySelectorAll('.events .events__item');
   console.log(events.length)
   let numShow = document.querySelector('.events-show');
   // document.querySelector('.events__btns_list').innerHTML = '';
@@ -16,7 +16,6 @@ try {
   }
   createVisibleCards(value)
   
-  // console.log(document.querySelector('.events__select').value)
   
   function createNumPages(value) {
     pages = Math.ceil(events.length / Number(value));

@@ -58,12 +58,319 @@
           <div class="miss-events__wrap">
             <h2 class="miss-events__title">Don’t want to miss the best events? Subscribe to our newsletter!</h2>
             <form class="miss-events__form">
-              <input class="miss-events__input" type="text" placeholder="Your working email">
-              <button class="btn btn-color miss-events__btn">Subscribe</button>
+              <label class="miss-events__label">
+                <input class="miss-events__input" type="text" placeholder="Your working email">
+                <button class="btn btn-color miss-events__btn">Subscribe</button>
+              </label>
+              <label class="miss-events__checkbox" for="check-agree">
+                <input class="miss-events__check" id="check-agree" type="checkbox" value="yes" checked>
+                <span class="miss-events__check_text">I agree to receive communications from Createx Online School</span>
+              </label>
             </form>
           </div>
         </div>
       </section>
+      <section class="request">
+        <div class="container request__container">
+          <div class="request__wrap course-registration__wrap">
+            <span class="request__subtitle subtitle">Don’t miss the event</span>
+            <h2 class="course-registration__title title">Leave a request</h2>
+            <form class="request__form discount__form course-registration__form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+              <ul class="discount__form_list course-registration__list">
+                <li class="discount__form_item course-registration__item">
+                  <label class="discount__form_label course-registration__label">Full name</label>
+                  <input class="discount__form_input course-registration__input" type="text" name="full name" placeholder="Your full name">
+                </li>
+                <li class="discount__form_item course-registration__item">
+                  <label class="discount__form_label course-registration__label">Email</label>
+                  <input class="discount__form_input course-registration__input" type="email" name="email" placeholder="Your working email">
+                </li>
+                <li class="discount__form_item course-registration__item">
+                  <label class="discount__form_label course-registration__label">Phone</label>
+                  <input class="discount__form_input course-registration__input" type="text" name="phone" placeholder="Your phone number">
+                </li>
+              </ul>
+              <button class="request__btn discount__btn btn btn-color course-registration__btn">Join the course</button>
+            </form>
+            <span class="request__span">* You will receive a link to the online lecture in an email after registration.</span>
+          </div>
+          <img class="request__img" src="images/page_event/live_illustration.png" tabindex="-1">
+        </div>
+      </section>
+    </section>
+    <section class="interested">
+      <div class="container interested__container team__container check-courses__container">
+        <div class="team__wrap check-courses__wrap">
+          <div class="team__info">
+            <span class="check-courses__subtitle subtitle">Check other online events</span>
+            <h2 class="check-courses__title title">You may be interested in</h2>
+          </div>
+          <div class="team__btn check-courses__btns">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div class="interested__swiper swiper events__box changed">
+          <ul class="lectures__list events__list check-courses__wrapper featured__list swiper-wrapper">
+            <li class="lectures__item events__item swiper-slide">
+              <span class="lectures__date">05</span>
+              <div class="lectures__wrap">
+                <span class="lectures__month">August </span>
+                <span class="lectures__time">11:00 – 14:00</span>
+              </div>
+              <div class="lectures__box">
+                <h3 class="lectures__info">Formation of the organizational structure of the company in the face of uncertainty.</h3>
+                <span class="lectures__online">Onine master-class</span>
+              </div>
+              <a class="lectures__btn btn btn-uncolor" href="event.html">View more</a>
+            </li>
+            <li class="lectures__item events__item swiper-slide">
+              <span class="lectures__date">24</span>
+              <div class="lectures__wrap">
+                <span class="lectures__month">July </span>
+                <span class="lectures__time">11:00 – 12:30</span>
+              </div>
+              <div class="lectures__box">
+                <h3 class="lectures__info">Building a customer service department. Best Practices.</h3>
+                <span class="lectures__online">Onine lecture</span>
+              </div>
+              <a class="lectures__btn btn btn-uncolor" href="event.html">View more</a>
+            </li>
+            <li class="lectures__item events__item swiper-slide">
+              <span class="lectures__date">16</span>
+              <div class="lectures__wrap">
+                <span class="lectures__month">July </span>
+                <span class="lectures__time">10:00 – 13:00</span>
+              </div>
+              <div class="lectures__box">
+                <h3 class="lectures__info">How to apply methods of speculative design in practice. Worldbuilding prototyping.</h3>
+                <span class="lectures__online">Onine workshop</span>
+              </div>
+              <a class="lectures__btn btn btn-uncolor" href="event.html">View more</a>
+            </li>
+            <li class="lectures__item events__item swiper-slide">
+              <span class="lectures__date">10</span>
+              <div class="lectures__wrap">
+                <span class="lectures__month">July </span>
+                <span class="lectures__time">9:00 – 14:00</span>
+              </div>
+              <div class="lectures__box">
+                <h3 class="lectures__info">Find and evaluate: search and assessment tools for candidates.</h3>
+                <span class="lectures__online">Onine workshop</span>
+              </div>
+              <a class="lectures__btn btn btn-uncolor" href="event.html">View more</a>
+            </li>
+            <li class="lectures__item events__item swiper-slide">
+              <span class="lectures__date">27</span>
+              <div class="lectures__wrap">
+                <span class="lectures__month">June</span>
+                <span class="lectures__time">15:00 – 19:00</span>
+              </div>
+              <div class="lectures__box">
+                <h3 class="lectures__info">Connection to Microsoft Excel and Google Sheets, Data Visualization in Power BI.</h3>
+                <span class="lectures__online">Onine master-class</span>
+              </div>
+              <a class="lectures__btn btn btn-uncolor" href="event.html">View more</a>
+            </li>
+            <li class="lectures__item events__item swiper-slide">
+              <span class="lectures__date">15</span>
+              <div class="lectures__wrap">
+                <span class="lectures__month">June</span>
+                <span class="lectures__time">10:00 – 12:00</span>
+              </div>
+              <div class="lectures__box">
+                <h3 class="lectures__info">Marketing or growth hacking: main differences and what business needs.</h3>
+                <span class="lectures__online">Onine lecture</span>
+              </div>
+              <a class="lectures__btn btn btn-uncolor" href="event.html">View more</a>
+            </li>
+            <li class="lectures__item events__item swiper-slide">
+              <span class="lectures__date">02</span>
+              <div class="lectures__wrap">
+                <span class="lectures__month">June</span>
+                <span class="lectures__time">11:00 – 13:00</span>
+              </div>
+              <div class="lectures__box">
+                <h3 class="lectures__info">How to brief a client and present your design to approve it from the first show.</h3>
+                <span class="lectures__online">Onine lecture</span>
+              </div>
+              <a class="lectures__btn btn btn-uncolor" href="event.html">View more</a>
+            </li>
+            <li class="lectures__item events__item swiper-slide">
+              <span class="lectures__date">29</span>
+              <div class="lectures__wrap">
+                <span class="lectures__month">May</span>
+                <span class="lectures__time">11:00 – 12:00</span>
+              </div>
+              <div class="lectures__box">
+                <h3 class="lectures__info">Who is a project manager and do I want to be PM?</h3>
+                <span class="lectures__online">Onine lecture</span>
+              </div>
+              <a class="lectures__btn btn btn-uncolor" href="event.html">View more</a>
+            </li>
+            <li class="lectures__item events__item swiper-slide">
+              <span class="lectures__date">18</span>
+              <div class="lectures__wrap">
+                <span class="lectures__month">May</span>
+                <span class="lectures__time">10:00 – 12:00</span>
+              </div>
+              <div class="lectures__box">
+                <h3 class="lectures__info">The company's business page as an additional tool to support the announcement of vacancies.</h3>
+                <span class="lectures__online">Onine lecture</span>
+              </div>
+              <a class="lectures__btn btn btn-uncolor" href="event.html">View more</a>
+            </li>
+            <li class="lectures__item events__item swiper-slide">
+              <span class="lectures__date">05</span>
+              <div class="lectures__wrap">
+                <span class="lectures__month">August </span>
+                <span class="lectures__time">11:00 – 14:00</span>
+              </div>
+              <div class="lectures__box">
+                <h3 class="lectures__info">Formation of the organizational structure of the company in the face of uncertainty.</h3>
+                <span class="lectures__online">Onine master-class</span>
+              </div>
+              <a class="lectures__btn btn btn-uncolor" href="event.html">View more</a>
+            </li>
+            <li class="lectures__item events__item swiper-slide">
+              <span class="lectures__date">24</span>
+              <div class="lectures__wrap">
+                <span class="lectures__month">July </span>
+                <span class="lectures__time">11:00 – 12:30</span>
+              </div>
+              <div class="lectures__box">
+                <h3 class="lectures__info">Building a customer service department. Best Practices.</h3>
+                <span class="lectures__online">Onine lecture</span>
+              </div>
+              <a class="lectures__btn btn btn-uncolor" href="event.html">View more</a>
+            </li>
+            <li class="lectures__item events__item swiper-slide">
+              <span class="lectures__date">16</span>
+              <div class="lectures__wrap">
+                <span class="lectures__month">July </span>
+                <span class="lectures__time">10:00 – 13:00</span>
+              </div>
+              <div class="lectures__box">
+                <h3 class="lectures__info">How to apply methods of speculative design in practice. Worldbuilding prototyping.</h3>
+                <span class="lectures__online">Onine workshop</span>
+              </div>
+              <a class="lectures__btn btn btn-uncolor" href="event.html">View more</a>
+            </li>
+            <li class="lectures__item events__item swiper-slide">
+              <span class="lectures__date">05</span>
+              <div class="lectures__wrap">
+                <span class="lectures__month">August </span>
+                <span class="lectures__time">11:00 – 14:00</span>
+              </div>
+              <div class="lectures__box">
+                <h3 class="lectures__info">Formation of the organizational structure of the company in the face of uncertainty.</h3>
+                <span class="lectures__online">Onine master-class</span>
+              </div>
+              <a class="lectures__btn btn btn-uncolor" href="event.html">View more</a>
+            </li>
+            <li class="lectures__item events__item swiper-slide">
+              <span class="lectures__date">24</span>
+              <div class="lectures__wrap">
+                <span class="lectures__month">July </span>
+                <span class="lectures__time">11:00 – 12:30</span>
+              </div>
+              <div class="lectures__box">
+                <h3 class="lectures__info">Building a customer service department. Best Practices.</h3>
+                <span class="lectures__online">Onine lecture</span>
+              </div>
+              <a class="lectures__btn btn btn-uncolor" href="event.html">View more</a>
+            </li>
+            <li class="lectures__item events__item swiper-slide">
+              <span class="lectures__date">16</span>
+              <div class="lectures__wrap">
+                <span class="lectures__month">July </span>
+                <span class="lectures__time">10:00 – 13:00</span>
+              </div>
+              <div class="lectures__box">
+                <h3 class="lectures__info">How to apply methods of speculative design in practice. Worldbuilding prototyping.</h3>
+                <span class="lectures__online">Onine workshop</span>
+              </div>
+              <a class="lectures__btn btn btn-uncolor" href="event.html">View more</a>
+            </li>
+            <li class="lectures__item events__item swiper-slide">
+              <span class="lectures__date">05</span>
+              <div class="lectures__wrap">
+                <span class="lectures__month">August </span>
+                <span class="lectures__time">11:00 – 14:00</span>
+              </div>
+              <div class="lectures__box">
+                <h3 class="lectures__info">Formation of the organizational structure of the company in the face of uncertainty.</h3>
+                <span class="lectures__online">Onine master-class</span>
+              </div>
+              <a class="lectures__btn btn btn-uncolor" href="event.html">View more</a>
+            </li>
+            <li class="lectures__item events__item swiper-slide">
+              <span class="lectures__date">24</span>
+              <div class="lectures__wrap">
+                <span class="lectures__month">July </span>
+                <span class="lectures__time">11:00 – 12:30</span>
+              </div>
+              <div class="lectures__box">
+                <h3 class="lectures__info">Building a customer service department. Best Practices.</h3>
+                <span class="lectures__online">Onine lecture</span>
+              </div>
+              <a class="lectures__btn btn btn-uncolor" href="event.html">View more</a>
+            </li>
+            <li class="lectures__item events__item swiper-slide">
+              <span class="lectures__date">16</span>
+              <div class="lectures__wrap">
+                <span class="lectures__month">July </span>
+                <span class="lectures__time">10:00 – 13:00</span>
+              </div>
+              <div class="lectures__box">
+                <h3 class="lectures__info">How to apply methods of speculative design in practice. Worldbuilding prototyping.</h3>
+                <span class="lectures__online">Onine workshop</span>
+              </div>
+              <a class="lectures__btn btn btn-uncolor" href="event.html">View more</a>
+            </li>
+            <li class="lectures__item events__item swiper-slide">
+              <span class="lectures__date">05</span>
+              <div class="lectures__wrap">
+                <span class="lectures__month">August </span>
+                <span class="lectures__time">11:00 – 14:00</span>
+              </div>
+              <div class="lectures__box">
+                <h3 class="lectures__info">Formation of the organizational structure of the company in the face of uncertainty.</h3>
+                <span class="lectures__online">Onine master-class</span>
+              </div>
+              <a class="lectures__btn btn btn-uncolor" href="event.html">View more</a>
+            </li>
+            <li class="lectures__item events__item swiper-slide">
+              <span class="lectures__date">24</span>
+              <div class="lectures__wrap">
+                <span class="lectures__month">July </span>
+                <span class="lectures__time">11:00 – 12:30</span>
+              </div>
+              <div class="lectures__box">
+                <h3 class="lectures__info">Building a customer service department. Best Practices.</h3>
+                <span class="lectures__online">Onine lecture</span>
+              </div>
+              <a class="lectures__btn btn btn-uncolor" href="event.html">View more</a>
+            </li>
+            <li class="lectures__item events__item swiper-slide">
+              <span class="lectures__date">16</span>
+              <div class="lectures__wrap">
+                <span class="lectures__month">July </span>
+                <span class="lectures__time">10:00 – 13:00</span>
+              </div>
+              <div class="lectures__box">
+                <h3 class="lectures__info">How to apply methods of speculative design in practice. Worldbuilding prototyping.</h3>
+                <span class="lectures__online">Onine workshop</span>
+              </div>
+              <a class="lectures__btn btn btn-uncolor" href="event.html">View more</a>
+            </li>
+          </ul>
+        </div>
+        <div class="check-courses__box">
+          <span class="check-courses__question">Do you want more?</span>
+          <a href="events.html" class="check-courses__btn btn btn-color">Explore all events</a>
+        </div>
+      </div>
     </section>
   </main>
 

@@ -82,8 +82,9 @@
   color: var(--color-dark);
 }
 
-.miss-events__form {
+.miss-events__label {
   display: flex;
+  margin-bottom: 24px;
 }
 
 .miss-events__input {
@@ -106,4 +107,86 @@
   font-size: 16px;
   line-height: 26px;
   color: var(--color-light);
+}
+
+.miss-events__checkbox {
+  cursor: pointer;
+}
+
+.miss-events__check {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.miss-events__check_text {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--color-gray);
+}
+
+.miss-events__check_text::before {
+  content: '';
+  display: inline-block;
+  margin-right: 12px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--color-orange);
+  border-radius: 3px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.miss-events__checkbox>input:checked+span::before {
+  border-color: var(--color-orange);
+  background-color: var(--color-orange);
+  background-image: url('../images/icons/check.svg');
+}
+
+.request__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.request__wrap {
+  max-width: 510px;
+}
+
+.request__form {
+  margin-bottom: 24px;
+  max-width: 495px;
+}
+
+.request__span {
+  display: block;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--color-gray);
+}
+
+.request__img {
+  height: 100%;
+}
+
+.interested {
+  background-color: #F4F5F7;
+}
+
+.interested__container {
+  padding-top: 100px;
+  padding-bottom: 180px;
+}
+
+.interested .changed .events__list {
+  flex-wrap: nowrap;
+}
+
+.interested .lectures__item:not(:last-child) {
+  margin-bottom: 0;
 }
