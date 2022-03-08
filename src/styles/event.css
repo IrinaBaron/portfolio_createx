@@ -183,10 +183,26 @@
   padding-bottom: 180px;
 }
 
+.interested .team__wrap {
+  text-align: left;
+}
+
+.interested__swiper {
+  margin-bottom: 80px;
+}
+
 .interested .changed .events__list {
   flex-wrap: nowrap;
 }
 
 .interested .lectures__item:not(:last-child) {
   margin-bottom: 0;
+}
+
+.interested__list {
+  margin-bottom: 0;
+}
+
+.interested .swiper-slide {
+  width: 390px;
 }

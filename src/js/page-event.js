@@ -6,10 +6,11 @@ try {
     return
   })
 
-  const swiper3 = new Swiper('.interested__swiper', {
+  const swiperInterested = new Swiper('.interested__swiper', {
   
     slidesPerView: 3,
-    // slidesPerGroup: 1,
+    direction: 'horizontal',
+    // slidesPerGroup: 3,
     spaceBetween: 30,
     navigation: {
       nextEl: '.interested .swiper-button-next',
