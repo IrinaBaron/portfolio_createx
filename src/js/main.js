@@ -1,6 +1,7 @@
 // document.addEventListener('DOMContentLoaded', (e) => {
 
   try {
+    clickOnEventsCard();
     const swiper = new Swiper('.team__swiper', {
       // Optional parameters
       slidesPerView: 4,
@@ -137,7 +138,8 @@
         content.classList.add('active'); // 4
       });
     });
-    clickOnEventsCard();
+    
+    
   } catch (error) {
     console.log(error)
   }

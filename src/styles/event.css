@@ -189,13 +189,21 @@
 
 .interested__swiper {
   margin-bottom: 80px;
+  width: 1230px;
+  height: 100%;
 }
 
 .interested .changed .events__list {
   flex-wrap: nowrap;
+
+}
+
+.interested .lectures__item {
+  justify-content: unset;
 }
 
 .interested .lectures__item:not(:last-child) {
+  margin-right: 0;
   margin-bottom: 0;
 }
 
@@ -203,6 +211,8 @@
   margin-bottom: 0;
 }
 
-.interested .swiper-slide {
+.interested__container .swiper-wrapper .swiper-slide {
   width: 390px;
+  max-width: 390px;
+  margin-right: 0;
 }

@@ -225,6 +225,7 @@ try {
         }
       })
     })
+    return
   }
   clickOnEventsCard();
 

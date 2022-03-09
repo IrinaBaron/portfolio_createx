@@ -1,8 +1,9 @@
 try {
-  let allEvents = document.querySelectorAll('.interested .swiper-wrapper .events__item');
+  let allEvents = document.querySelectorAll('.interested .events__item');
   console.log(allEvents.length)
   allEvents.forEach(event => {
     event.style.display = 'flex';
+    event.style.width = '390px';
     return
   })
 
@@ -11,6 +12,7 @@ try {
     slidesPerView: 3,
     direction: 'horizontal',
     // slidesPerGroup: 3,
+    loopFillGroupWithBlank: false,
     spaceBetween: 30,
     navigation: {
       nextEl: '.interested .swiper-button-next',
