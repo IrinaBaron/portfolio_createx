@@ -1,0 +1,148 @@
+.about-hero__container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 192px;
+  page-break-inside: 132px;
+}
+
+.about-hero__wrap {
+  margin-right: 10px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.about-hero__title {
+  margin-bottom: 48px;
+}
+
+.about-hero__text-bold {
+  margin-bottom: 24px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--color-dark);
+}
+
+.about-hero__text {
+  margin-bottom: 60px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--color-gray);
+}
+
+.about-hero__box .btn-uncolor {
+  margin-right: 24px;
+}
+
+.about-more__container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 132px;
+  padding-bottom: 90px;
+}
+
+.about-more__wrap {
+  padding-top: 96px;
+  padding-left: 133px;
+}
+
+.about-more__list {
+  width: 100%;
+}
+
+.about-more__item {
+  display: flex;
+  align-items: center;
+}
+
+.about-more__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.about-more__span-bold {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 62px;
+  letter-spacing: 1px;
+  color: var(--color-orange);
+}
+
+.about-more__span {
+  padding-left: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--color-dark);
+}
+
+.core__container {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  text-align: center;
+}
+
+.core__title {
+  margin-bottom: 60px;
+}
+
+.core__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.core__item {
+  position: relative;
+  padding-top: 72px;
+  max-width: 240px;
+  height: auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.core__item:not(:last-child) {
+  margin-right: 90px;
+}
+
+.core__item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -45px;
+  width: 1px;
+  height: 162px;
+  background: linear-gradient(270.01deg, rgba(218, 219, 221, 0) 0%, rgba(218, 219, 221, 0.5) 12.33%, #DADBDD 51.91%, rgba(218, 219, 221, 0.5) 87.85%, rgba(218, 219, 221, 0) 100%);
+}
+
+.core1 {
+  background-image: url('../images/about_us/icons/approach.svg');
+}
+
+.core2 {
+  background-image: url('../images/about_us/icons/ic-chat.svg');
+}
+
+.core3 {
+  background-image: url('../images/about_us/icons/efficiency.svg');
+}
+
+.core4 {
+  background-image: url('../images/about_us/icons/ic-calendar.svg');
+}
+
+.core__sub {
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: var(--color-dark);
+}
+
+.core__text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #787A80;
+}

@@ -4,9 +4,96 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>CreateX - about us</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-favicon.png">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="./styles/main.css">
+
+  <script defer src="./js/app.js"></script>
 </head>
 <body>
+  <header class="header">
+    @@include('partials/header_about-us.html')
+  </header>
+
+  <main>
+    <section class="about-hero">
+      <div class="container about-hero__container">
+        <div class="about-hero__wrap">
+          <span class="about-hero__subtitle subtitle">About us</span>
+          <h2 class="about-hero__title title">Createx Online School</h2>
+          <p class="about-hero__text-bold">
+            Createx Online School is a leader in online studying. We have lots of courses and programs from the main market experts.
+          </p>
+          <p class="about-hero__text">
+            We provide relevant approaches to online learning, internships and employment in the largest companies in the country. Our educational programs help you get a new specialty from scratch. During your studies, we will help you find a job. Check the courses and online events that we organise.
+          </p>
+          <div class="about-hero__box">
+            <a class="btn btn-uncolor" href="events.html">Explore events</a>
+            <a class="btn btn-color" href="courses.html">Browse courses</a>
+          </div>
+        </div>
+        <img class="about-hero__img" src="images/about_us/about-hero_illustration.png" tabindex="-1">
+      </div>
+    </section>
+    <section class="about-more">
+      <div class="container about-more__container">
+        <img src="images/about_us/info_img.jpg" tabindex="-1">
+        <div class="about-more__wrap">
+          <ul class="about-more__list">
+            <li class="about-more__item">
+              <span class="about-more__span-bold">1200</span>
+              <span class="about-more__span">students graduated</span>
+            </li>
+            <li class="about-more__item">
+              <span class="about-more__span-bold">84</span>
+              <span class="about-more__span">completed courses</span>
+            </li>
+            <li class="about-more__item">
+              <span class="about-more__span-bold">16</span>
+              <span class="about-more__span">qualified tutors</span>
+            </li>
+            <li class="about-more__item">
+              <span class="about-more__span-bold">5</span>
+              <span class="about-more__span">years of experience</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="core">
+      <div class="container core__container">
+        <span class="core__subtitle subtitle">We always stand for</span>
+        <h2 class="core__title title">Our core values</h2>
+        <ul class="core__list">
+          <li class="core__item core1">
+            <h3 class="core__sub">Structured Approach</h3>
+            <p class="core__text">Aenean urna dictum adipiscing nec, cras quisque. Nunc in mauris. </p>
+          </li>
+          <li class="core__item core2">
+            <h3 class="core__sub">Professional Feedbacks</h3>
+            <p class="core__text">Culpa nostrud commodo ea consequat reprehenderit aliquip. </p>
+          </li>
+          <li class="core__item core3">
+            <h3 class="core__sub">Efficiency</h3>
+            <p class="core__text">Viverra scelerisque consequat net. Adipisicing esse consequat. </p>
+          </li>
+          <li class="core__item core4">
+            <h3 class="core__sub">Flexible Shedule</h3>
+            <p class="core__text">Aute eiusmod dolore dolore deserunt veniam ad deserunt. </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    @@include('partials/footer.html')
+  </footer>
   
 </body>
 </html>
