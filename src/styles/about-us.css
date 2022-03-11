@@ -354,3 +354,40 @@
 .tutor__item .team__info {
   margin-bottom: 16px;
 }
+
+.say-work .say__container {
+  padding-bottom: 90px;
+}
+
+.student-work__container {
+  padding-top: 90px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.student-work__title {
+  margin-bottom: 60px;
+}
+
+.student-work__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.student-work__item {
+  margin-bottom: 40px;
+}
+
+.student-work__item:not(:nth-child(6n)) {
+  margin-right: 102px;
+}
+
+.student-work__link {
+  height: auto;
+}
+
+.student-work__img {
+  max-width: 120px;
+  width: 100%;
+}
