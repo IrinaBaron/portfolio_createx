@@ -391,3 +391,7 @@
   max-width: 120px;
   width: 100%;
 }
+
+.about-blog .posts__container {
+  padding-top: 100px;
+}

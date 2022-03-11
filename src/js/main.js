@@ -1,7 +1,7 @@
 // document.addEventListener('DOMContentLoaded', (e) => {
 
   try {
-    clickOnEventsCard();
+    
     const swiper = new Swiper('.team__swiper', {
       // Optional parameters
       slidesPerView: 4,
@@ -29,7 +29,19 @@
       }
   
     });
-  
+    // clickOnEventsCard();
+    let events = document.querySelectorAll('.lectures__item');
+    events.forEach(event => {
+      event.addEventListener('click', e => {
+        window.location.href='event.html';
+      })
+      event.addEventListener('keyup', e => {
+        if (e.code == 'Enter') {
+          window.location.href='event.html';
+        }
+      })
+    })
+
     let teams = document.querySelectorAll('.team__img');
     let socials = document.querySelectorAll('.team__social');
   

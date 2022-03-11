@@ -130,8 +130,8 @@ const prebuild = async function () {
 
 const buildM = async function () {
   const js = src([
+    'src/js/**/*.js',
     'src/js/main.js',
-    'src/js/**/*.js'
   ])
     .pipe(concat('app.js'))
     .pipe(dest('dist/js'))

@@ -214,7 +214,7 @@ try {
   function clickOnEventsCard() {
     
     
-    events = document.querySelectorAll('.lectures__item');
+    let events = document.querySelectorAll('.lectures__item');
     events.forEach(event => {
       event.addEventListener('click', e => {
         window.location.href='event.html';
