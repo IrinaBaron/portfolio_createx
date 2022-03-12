@@ -144,6 +144,19 @@
   .talk__wrap {
     margin-right: 10px;
   }
+
+  .about-more__img {
+    max-width: 50%;
+  }
+
+  .about-more__wrap {
+    padding-left: 50px;
+    width: 50%;
+  }
+
+  .tutor__item:not(:nth-child(4n)) {
+    margin-right: 10px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -788,6 +801,53 @@
     padding-top: 90px;
     padding-bottom: 90px;
   }
+
+  .about-hero__img {
+    width: 45%;
+    height: 45%;
+  }
+
+  .about-more__container {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  .about-more__img {
+    height: 50%;
+  }
+
+  .about-more__wrap {
+    padding-top: 0;
+  }
+
+  .core__container {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  .main-directions__list {
+    justify-content: center;
+  }
+
+  .studying-proc__container {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  .studying-proc__img {
+    width: 50%;
+    height: 50%;
+  }
+
+  .student-work__item {
+    margin-bottom: 20px;
+  }
+
+  .student-work__item:not(:nth-child(6n)) {
+    margin-right: 50px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -963,7 +1023,7 @@
 
   .posts__item:not(:last-child) {
     margin-right: 0;
-    margin-bottom: 25px;
+    margin-bottom: 55px;
   } 
   
   .posts__item {
@@ -1144,6 +1204,83 @@
   .interested__swiper .swiper-slide {
     max-width: 100%;
   }
+
+  .miss-events__container {
+    padding: 60px 15px;
+  }
+
+  .miss-events__wrap {
+    max-width: 100%;
+  }
+
+  .about-hero__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-hero__wrap {
+    margin-right: 0;
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+
+  .about-more__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-more__img {
+    order: 1;
+  }
+
+  .about-more__wrap {
+    margin-bottom: 20px;
+    padding-left: 0;
+    width: 100%;
+    order: 0;
+  }
+
+  .core__list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .core__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .core__item:not(:last-child)::after {
+    top: unset;
+    left: 50%;
+    bottom: -60%;
+    transform: rotate(90deg);
+  }
+
+  .main-directions__container {
+    padding-top: 55px;
+    padding-bottom: 45px;
+  }
+
+  .tutor__list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tutor__item:not(:nth-child(4n)) {
+    margin-right: 0;
+  } 
+
+  .tutor__item {
+    margin-bottom: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .tutor__item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
 }
 
 @media (max-width: 570px) {
@@ -1505,5 +1642,85 @@
 
   .interested__swiper .swiper-slide {
     max-width: 100%;
+  }
+
+  .course-wrapper {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  .course-curator__container {
+    align-items: center;
+  }
+
+  .course-curator__img {
+    width: 70%;
+  }
+
+  .benefit-from__container {
+    flex-direction: column;
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  .benefit-from__left {
+    margin-right: 0;
+    max-width: 100%;
+  }
+
+  .benefit-from__right {
+    padding-top: 15px;
+  }
+
+  .miss-events__check_text::before {
+    width: 27px;
+  }
+
+  .interested__container {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  .check-courses__title {
+    margin-bottom: 0;
+  }
+
+  .interested .team__wrap {
+    margin-bottom: 20px;
+  }
+
+  .interested__swiper {
+    margin-bottom: 40px;
+  }
+
+  .about-hero__container {
+    padding-top: 150px;
+  }
+
+  .tutors__container {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  .say-work .say__container {
+    padding-bottom: 0;
+  }
+
+  .student-work__container {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  .student-work__list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .student-work__item:not(:nth-child(6n)) {
+    margin-right: 0;
+  }
+
+  .about-blog .posts__container {
+    padding-top: 45px;
   }
 }
