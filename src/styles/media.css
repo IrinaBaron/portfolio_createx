@@ -1075,6 +1075,10 @@
   .course-wrapper {
     padding-bottom: 65px;
   }
+
+  .interested__swiper .swiper-slide {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 570px) {
@@ -1434,4 +1438,7 @@
     max-width: 100%;
   }
 
+  .interested__swiper .swiper-slide {
+    max-width: 100%;
+  }
 }
