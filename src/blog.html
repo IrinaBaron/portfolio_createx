@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CreateX - blog</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-favicon.png">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="./styles/main.css">
+
+  <script defer src="./js/app.js"></script>
+</head>
+<body>
+  <header class="header">
+    @@include('partials/header-blog.html')
+  </header>
+  <main>
+    <section class="journal">
+      <div class="container journal__container">
+        <span class="journal__subtitle subtitle">Our blog</span>
+        <h2 class="journal__title title">Createx School Journal</h2>
+        <div class="journal__wrap">
+          <ul class="journal__list benefits__list">
+            <li class="benefits__item">
+              <button class="journal__btn benefits__btn js-tab-trigger active" data-tab="1">All</button>
+            </li>
+            <li class="benefits__item">
+              <button class="journal__btn benefits__btn js-tab-trigger article" data-tab="2">Articles</button>
+            </li>
+            <li class="benefits__item">
+              <button class="journal__btn benefits__btn js-tab-trigger video" data-tab="3">Videos</button>
+            </li>
+            <li class="benefits__item">
+              <button class="journal__btn benefits__btn js-tab-trigger podcast" data-tab="4">Podcasts</button>
+            </li>
+          </ul>
+          <div class="journal__box">
+            <span class="journal__span">Blog category</span>
+            <select class="events__select" name="category" id="category">
+              <option class="events__option" value="all">all themes</option>
+              <option class="events__option" value="master-class">master-class</option>
+              <option class="events__option" value="lecture">lecture</option>
+              <option class="events__option" value="workshop">workshop</option>
+            </select>
+            <input type="text" placeholder="Search blog...">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    @@include('partials/footer.html')
+  </footer>
+</body>
+</html>

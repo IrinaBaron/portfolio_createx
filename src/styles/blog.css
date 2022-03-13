@@ -1,0 +1,22 @@
+.journal__container {
+  padding-top: 152px;
+}
+
+.journal__btn {
+  background-position: left 8px center;
+  background-repeat: no-repeat;
+}
+
+.journal__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.journal__list {
+  max-width: 465px;
+  width: 100%;
+}
+
+.journal__box {
+  display: flex;
+}
