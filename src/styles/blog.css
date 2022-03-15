@@ -106,3 +106,21 @@
   grid-column: 7/10;
   grid-row: 3/4;
 }
+
+.blog-subsc {
+  background-color: #F4F5F7;
+}
+
+
+.blog-subsc__container {
+  display: flex;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.blog-subsc .miss-events__wrap {
+  padding-top: 100px;
+  padding-bottom: 120px;
+  padding-left: 160px;
+  max-width: 100%;
+}
