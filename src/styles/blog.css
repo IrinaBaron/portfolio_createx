@@ -3,6 +3,11 @@
   padding-bottom: 180px;
 }
 
+.journal__subtitle,
+.journal__title {
+  text-align: center;
+}
+
 .journal__btn {
   background-position: left 8px center;
   background-repeat: no-repeat;

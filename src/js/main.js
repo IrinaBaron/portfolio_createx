@@ -1,4 +1,4 @@
-// document.addEventListener('DOMContentLoaded', (e) => {
+document.addEventListener('DOMContentLoaded', (e) => {
 
   try {
     
@@ -160,4 +160,4 @@
     console.log(error)
   }
 
-// })
+})
