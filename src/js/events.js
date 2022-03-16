@@ -1,7 +1,6 @@
-document.addEventListener('DOMContentLoaded', e => {
+document.addEventListener('DOMContentLoaded', () => {
   try {
     let events = document.querySelectorAll('.events .events__item');
-    console.log(events.length)
     let numShow = document.querySelector('.events-show');
     // document.querySelector('.events__btns_list').innerHTML = '';
     cleanList();
@@ -213,7 +212,6 @@ document.addEventListener('DOMContentLoaded', e => {
     });
 
     function clickOnEventsCard() {
-      
       
       let events = document.querySelectorAll('.lectures__item');
       events.forEach(event => {
