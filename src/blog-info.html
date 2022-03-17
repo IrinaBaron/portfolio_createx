@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CreateX - blog</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-favicon.png">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="./styles/main.css">
+
+  <script defer src="./js/app.js"></script>
+</head>
+<body>
+  <header class="header">
+    @@include('partials/header-blog.html')
+  </header>
+
+  <main>
+    <section class="blog-info">
+      <div class="container blog-info__container">
+        <section class="blog-info__hero">
+          <div class="blog-info__box">
+            <span class="blog-info__span article">Article</span>
+            <span class="blog-info__span">HR & Recruting</span>
+          </div>
+          <h2 class="blog-info__title title">HR statistics: job search,  interviews, hiring and recruiting</h2>
+          <div class="blog-info__wrap">
+            <ul class="posts__wrap_list">
+              <li class="posts__more date">September 4, 2020</li>
+              <li class="posts__more time">4 min read</li>
+            </ul>
+            <div class="blog-info__social">
+              <span class="blog-info__social_span">Share:</span>
+              <ul class="course-curator__social">
+                <li class="course-curator__item">
+                  <a class="course-curator__link_social" href="#">
+                    <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17.5628 1.00458L14.7856 1C11.6654 1 9.64903 3.12509 9.64903 6.41423V8.91055H6.85662C6.61532 8.91055 6.41992 9.1115 6.41992 9.35937V12.9763C6.41992 13.2241 6.61554 13.4249 6.85662 13.4249H9.64903V22.5514C9.64903 22.7993 9.84443 23 10.0857 23H13.729C13.9703 23 14.1657 22.799 14.1657 22.5514V13.4249H17.4307C17.672 13.4249 17.8674 13.2241 17.8674 12.9763L17.8688 9.35937C17.8688 9.24036 17.8226 9.12638 17.7409 9.04215C17.6591 8.95793 17.5477 8.91055 17.4318 8.91055H14.1657V6.79439C14.1657 5.77728 14.4017 5.26094 15.6915 5.26094L17.5624 5.26025C17.8035 5.26025 17.9989 5.0593 17.9989 4.81166V1.45317C17.9989 1.20576 17.8037 1.00504 17.5628 1.00458Z" fill="#787A80"/>
+                      </svg>
+                  </a>
+                </li>
+                <li class="course-curator__item">
+                  <a class="course-curator__link_social" href="#">
+                    <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M22.5 5.77233C21.7271 6.10027 20.8978 6.32267 20.0264 6.42196C20.9161 5.91181 21.5972 5.10263 21.92 4.1414C21.0854 4.61383 20.1642 4.95688 19.1826 5.14285C18.3966 4.33994 17.2785 3.83984 16.0384 3.83984C13.6593 3.83984 11.7303 5.68691 11.7303 7.9637C11.7303 8.2866 11.7683 8.60199 11.8418 8.90357C8.26201 8.73141 5.08768 7.08917 2.96314 4.59372C2.59176 5.20189 2.38049 5.91053 2.38049 6.66697C2.38049 8.09814 3.14161 9.36093 4.2964 10.0997C3.5904 10.0771 2.92639 9.89116 2.34508 9.58205V9.63357C2.34508 11.6314 3.83056 13.2988 5.80024 13.6783C5.43936 13.7713 5.05882 13.8228 4.66514 13.8228C4.38696 13.8228 4.11794 13.7964 3.85417 13.7461C4.40267 15.3859 5.99315 16.5783 7.87756 16.611C6.40388 17.7167 4.54573 18.3739 2.52749 18.3739C2.17976 18.3739 1.83724 18.3537 1.5 18.3173C3.40671 19.4896 5.67036 20.1732 8.10327 20.1732C16.028 20.1732 20.3597 13.8881 20.3597 8.43741L20.3453 7.90341C21.1917 7.32537 21.9239 6.59912 22.5 5.77233Z" fill="#787A80"/>
+                      </svg>
+                  </a>
+                </li>
+                <li class="course-curator__item">
+                  <a class="course-curator__link_social" href="#">
+                    <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M21.995 22L22 21.9992V14.6642C22 11.0758 21.2275 8.31167 17.0325 8.31167C15.0158 8.31167 13.6625 9.41833 13.11 10.4675H13.0517V8.64667H9.07416V21.9992H13.2158V15.3875C13.2158 13.6467 13.5458 11.9633 15.7017 11.9633C17.8258 11.9633 17.8575 13.95 17.8575 15.4992V22H21.995Z" fill="#787A80"/>
+                      <path d="M2.32999 8.6475H6.47666V22H2.32999V8.6475Z" fill="#787A80"/>
+                      <path d="M4.40167 2C3.07583 2 2 3.07583 2 4.40167C2 5.7275 3.07583 6.82583 4.40167 6.82583C5.7275 6.82583 6.80333 5.7275 6.80333 4.40167C6.8025 3.07583 5.72667 2 4.40167 2Z" fill="#787A80"/>
+                      </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <img class="blog-info__img" src="images/blog/keyboard.jpg" alt="">
+        </section>
+        <aside class="blog-info__aside">
+          <label for="">
+            <input type="text" placeholder="Search blog...">
+          </label>
+          <span>Author</span>
+        </aside>
+      </div>
+      
+    </section>
+  </main>
+
+  <footer class="footer">
+    @@include('partials/footer.html')
+  </footer>
+
+
+</body>
+</html>

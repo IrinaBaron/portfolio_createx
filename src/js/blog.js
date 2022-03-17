@@ -6,6 +6,18 @@ document.addEventListener('DOMContentLoaded', () => {
     let selectBlog = document.querySelector('.journal__box .events__select')
     let listBlogs = document.querySelectorAll('.journal__blog .posts__item');
 
+    listBlogs.forEach(item => {
+      item.addEventListener('click', () => {
+        item.addEventListener('click', e => {
+          window.location.href='blog-info.html';
+        })
+        item.addEventListener('keyup', e => {
+          if (e.code == 'Enter') {
+            window.location.href='blog-info.html';
+          }
+        })
+      })
+    })
 
     btnsBlog.forEach(btn => {
       btn.addEventListener('click', e => {
