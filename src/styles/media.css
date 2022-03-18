@@ -1432,6 +1432,23 @@
     text-align: center;
   }
 
+  .may-also__wrapper.journal__blog {
+    align-items: unset;
+    justify-content: space-between;
+  }
+
+  .may-also__wrapper .posts__view {
+    left: 5%;
+  }
+
+  .may-also__wrapper.journal__blog .posts__img {
+    width: 100%;
+  }
+
+  .may-also__wrapper.journal__blog .item4 .posts__img {
+    height: unset;
+  }
+
 }
 
 @media (max-width: 570px) {
@@ -1893,5 +1910,9 @@
   .journal .item7,
   .journal .item8 {
     grid-column: 1/2
+  }
+
+  .may-also__swiper .item4 .posts__img {
+    height: auto;
   }
 }

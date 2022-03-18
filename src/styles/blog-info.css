@@ -142,3 +142,27 @@
   border-color: var(--color-orange);
   color: var(--color-orange);
 }
+
+.may-also__wrapper.journal__blog {
+  display: flex;
+  flex-wrap: nowrap;    
+  flex-direction: row;
+  gap: 0;
+  margin-bottom: 80px;
+  text-align: left;
+}
+
+.may-also__swiper .swiper-slide {
+  padding-bottom: 42px;
+  max-width: 390px;
+  height: auto;
+  cursor: pointer;
+}
+
+.may-also__swiper .item4 .posts__img {
+  height: 300px;
+}
+
+.may-also__swiper .swiper-slide:hover .posts__link {
+  color: var(--color-orange);
+}
