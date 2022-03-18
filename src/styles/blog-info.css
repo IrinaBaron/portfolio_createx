@@ -70,3 +70,75 @@
   margin-bottom: 60px;
   width: 100%;
 }
+
+.blog-info__text {
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--color-gray);
+}
+
+.blog-info .text1, 
+.blog-info .text4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--color-dark);
+}
+
+.blog-info .text3 {
+  margin-bottom: 48px;
+}
+
+.blog-info .text4 {
+  margin-bottom: 0;
+}
+
+.blog-info__wrap_text {
+  display: flex;
+  margin-bottom: 48px;
+}
+
+.blog-info__wrap_img {
+  margin-right: 30px;
+  width: 28px;
+  height: 20px;
+}
+
+.blog-info .about-course__list {
+  margin-bottom: 24px;
+}
+
+.blog-info .text6 {
+  margin-bottom: 60px;
+}
+
+.blog-info__links {
+  margin-bottom: 0;
+}
+
+.blog-info__link {
+  padding: 6px 16px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--color-light-gray);
+  border: 1px solid var(--light-light-gray);
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: color .4s ease-in-out;
+}
+
+.blog-info__link:not(:last-child) {
+  margin-right: 12px;
+}
+
+.blog-info__link:hover {
+  color: var(--color-orange);
+}
+
+.blog-info__link.focus-visible {
+  border-color: var(--color-orange);
+  color: var(--color-orange);
+}

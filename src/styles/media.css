@@ -1879,4 +1879,19 @@
     width: 100%;
     height: 100%;
   }
+
+  .journal .journal__blog {
+    grid-template-columns: repeat(auto-fit,minmax(290px,1fr));
+  }
+
+  .journal .item1,
+  .journal .item2,
+  .journal .item3,
+  .journal .item4,
+  .journal .item5,
+  .journal .item6,
+  .journal .item7,
+  .journal .item8 {
+    grid-column: 1/2
+  }
 }

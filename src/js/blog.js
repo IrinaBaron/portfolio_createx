@@ -7,15 +7,13 @@ document.addEventListener('DOMContentLoaded', () => {
     let listBlogs = document.querySelectorAll('.journal__blog .posts__item');
 
     listBlogs.forEach(item => {
-      item.addEventListener('click', () => {
-        item.addEventListener('click', e => {
-          window.location.href='blog-info.html';
-        })
-        item.addEventListener('keyup', e => {
-          if (e.code == 'Enter') {
-            window.location.href='blog-info.html';
-          }
-        })
+      item.addEventListener('click', e => {
+        window.location.href = 'blog-info.html';
+      })
+      item.addEventListener('keyup', e => {
+        if (e.code == 'Enter') {
+          window.location.href = 'blog-info.html';
+        }
       })
     })
 
@@ -60,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
       elements.forEach(elem => {
         let parentElem = elem.parentElement;
         let parent = parentElem.parentElement;
-        if(value === elem.textContent.toLocaleLowerCase()) {
+        if (value === elem.textContent.toLocaleLowerCase()) {
           list.style.display = 'flex';
           list.style.justifyContent = 'space-between';
           list.style.flexWrap = 'wrap';
@@ -75,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
       let value = inputSearchBlog.value;
 
       cleanBlogList();
-      if(value == '') {
+      if (value == '') {
         listBlogs.forEach(item => {
           item.style.display = 'block';
           item.style.maxWidth = '100%';
@@ -86,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       let textsSearch = document.querySelectorAll('.journal__blog .posts__list_title');
       textsSearch.forEach(text => {
-        if(text.textContent.toLowerCase().includes(value)) {
+        if (text.textContent.toLowerCase().includes(value)) {
           let parent = text.parentElement;
           list.style.display = 'flex';
           list.style.justifyContent = 'space-between';
