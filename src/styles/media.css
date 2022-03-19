@@ -926,6 +926,47 @@
     flex-direction: column;
     align-items: center;
   }
+
+  .blog-info__container {
+    flex-direction: column;
+  }
+
+  .blog-info__hero {
+    margin-right: 0;
+  }
+
+  .blog-info .posts__wrap_list {
+    flex-direction: row;
+    height: auto;
+  }
+
+  .aside .online__search {
+    width: 16px;
+    left: 37%;
+    right: 0;
+  }
+
+  .aside .blog-info__item:not(:last-child) {
+    margin-right: 12px;
+  }
+
+  .aside .blog-info__item {
+    margin-right: 12px;
+  }
+
+  .aside .online__search {
+    left: 284px;
+  }
+
+  .may-also .check-courses__box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .may-also .check-courses__question {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1914,5 +1955,71 @@
 
   .may-also__swiper .item4 .posts__img {
     height: auto;
+  }
+
+  .blog-info__box {
+    text-align: center;
+  }
+
+  .blog-info__title {
+    text-align: center;
+  }
+
+  .blog-info__wrap {
+    flex-direction: column;
+  }
+
+  .blog-info .posts__wrap_list {
+    margin-bottom: 15px;
+    justify-content: center;
+  }
+
+  .blog-info__social {
+    justify-content: center;
+  }
+
+  .blog-info__img {
+    margin-bottom: 30px;
+  }
+
+  .blog-info__wrap_text {
+    margin-bottom: 28px;
+  }
+
+  .blog-info__wrap_img {
+    margin-right: 10px;
+    width: 20px;
+  }
+
+  .blog-info__social:first-child {
+    flex-direction: column;
+  }
+
+  .blog-info__social_span {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .blog-info .posts__wrap_list {
+    flex-direction: column;
+  }
+
+  .blog-info__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 12px;
+  }
+
+  .aside .online__input {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .aside .online__search {
+    left: unset;
+    right: 16px;
+  } 
+
+  .aside__list_item:not(:last-child) {
+    margin-bottom: 40px;
   }
 }

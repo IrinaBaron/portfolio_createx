@@ -180,12 +180,16 @@
   text-align: center;
 }
 
+.aside {
+  position: relative;
+}
+
 .aside .online__input {
   margin-bottom: 60px;
 }
 
 .aside .online__search {
-  top: 0;
+  top: 11px;
 }
 
 .aside__list_item:not(:last-child) {
@@ -268,4 +272,16 @@
 
 .aside .blog-info__links {
   flex-wrap: wrap;
+}
+
+.aside .blog-info__item {
+  margin-bottom: 12px;
+}
+
+.aside .blog-info__item:not(:last-child) {
+  margin-right: 0;
+}
+
+.aside .blog-info__item:not(:nth-child(3n)) {
+  margin-right: 12px;
 }
