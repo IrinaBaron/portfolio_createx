@@ -1206,11 +1206,11 @@
   }
 
   /* -----page2------ */
-  .online__container {
+  .online .online__container {
     padding-bottom: 60px;
   }
 
-  .online__list {
+  .online .online__list {
     margin-bottom: 41px;
   }
 
@@ -1772,7 +1772,7 @@
     width: 100%;
   }
 
-  .page2-sertificate__container {
+  .page2-sertificate .page2-sertificate__container {
     padding-top: 63px;
     padding-bottom: 63px;
   }
@@ -1929,8 +1929,17 @@
     margin-right: 0;
   }
 
+  .about-more__img {
+    max-width: unset;
+    width: 100%;
+  }
+
   .about-blog .posts__container {
     padding-top: 45px;
+  }
+
+  .journal .online__search {
+    right: 25px;
   }
 
   .journal .posts__img {
@@ -2004,6 +2013,10 @@
     flex-direction: column;
   }
 
+  .wrap-first .posts__wrap_list {
+    flex-direction: row;
+  }
+
   .blog-info__item:not(:last-child) {
     margin-right: 0;
     margin-bottom: 12px;
@@ -2016,7 +2029,7 @@
 
   .aside .online__search {
     left: unset;
-    right: 16px;
+    right: 25px;
   } 
 
   .aside__list_item:not(:last-child) {
