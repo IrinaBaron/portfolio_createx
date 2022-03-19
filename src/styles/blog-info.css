@@ -118,7 +118,15 @@
   margin-bottom: 0;
 }
 
+.blog-info__item {
+  width: auto;
+  height: auto;
+  font-size: 14px;
+  line-height: 21px;
+}
+
 .blog-info__link {
+  display: inline-block;
   padding: 6px 16px;
   font-weight: 700;
   font-size: 14px;
@@ -127,15 +135,16 @@
   border: 1px solid var(--light-light-gray);
   box-sizing: border-box;
   border-radius: 4px;
-  transition: color .4s ease-in-out;
+  transition: color .4s ease-in-out, background-color .4s ease-in-out;
 }
 
-.blog-info__link:not(:last-child) {
+.blog-info__item:not(:last-child) {
   margin-right: 12px;
 }
 
 .blog-info__link:hover {
-  color: var(--color-orange);
+  color: var(--color-for-dark);
+  background-color: var(--color-orange);
 }
 
 .blog-info__link.focus-visible {
@@ -167,12 +176,20 @@
   color: var(--color-orange);
 }
 
+.may-also .check-courses__box {
+  text-align: center;
+}
+
 .aside .online__input {
   margin-bottom: 60px;
 }
 
 .aside .online__search {
   top: 0;
+}
+
+.aside__list_item:not(:last-child) {
+  margin-bottom: 60px;
 }
 
 .aside__subtitle {
@@ -200,4 +217,55 @@
   font-size: 14px;
   line-height: 21px;
   color: var(--color-light-gray);
+}
+
+.aside__social {
+  display: flex;
+}
+
+.aside__item:not(:last-child) {
+  margin-right: 12px;
+}
+
+.aside__link svg path {
+  fill: var(--color-light-gray);
+  transition: fill .4s ease-in-out;
+}
+
+.aside__link:hover svg path,
+.aside__link.focus-visible svg path {
+  fill: var(--color-orange);
+}
+
+.aside__wrap:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.aside__date {
+  display: inline-block;
+  margin-bottom: 4px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--color-light-gray);
+}
+
+.aside__sub {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--color-dark);
+  transition: color .4s ease-in-out;
+}
+
+.aside__sub:hover {
+  color: var(--color-orange);
+}
+
+.aside__tag {
+  margin-bottom: 31px;
+}
+
+.aside .blog-info__links {
+  flex-wrap: wrap;
 }
