@@ -166,3 +166,38 @@
 .may-also__swiper .swiper-slide:hover .posts__link {
   color: var(--color-orange);
 }
+
+.aside .online__input {
+  margin-bottom: 60px;
+}
+
+.aside .online__search {
+  top: 0;
+}
+
+.aside__subtitle {
+  margin-bottom: 24px;
+}
+
+.aside__wrap {
+  display: flex;
+}
+
+.aside__img {
+  margin-right: 20px;
+  width: auto;
+}
+
+.aside .featured__name {
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+
+.aside__position {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--color-light-gray);
+}
