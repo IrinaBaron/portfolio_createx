@@ -141,8 +141,6 @@ const buildM = async function () {
     .pipe(dest('dist/fonts'))
 }
 
-
-
 const watchFiles = async () => {
   watch('src/styles/**/*.css', styles)
   watch('src/**/*.html', html)
