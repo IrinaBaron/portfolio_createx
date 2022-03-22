@@ -184,6 +184,11 @@
     max-width: 100%;
   }
 
+  .contact-info__img {
+    right: 0;
+    max-width: 58%;
+  }
+
   .questions__img {
     max-width: 40%;
   }
