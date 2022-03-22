@@ -18,10 +18,18 @@ document.addEventListener('DOMContentLoaded', () => {
           slidesPerView: 1,
           spaceBetween: 40,
         },
+        570: {
+          slidesPerView: 2,
+          spaceBetween: 29,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 29,
+        },
         1024: {
           slidesPerView: 2,
           spaceBetween: 29,
-        }
+        },
       }
     });
 
