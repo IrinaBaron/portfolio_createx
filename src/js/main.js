@@ -159,6 +159,12 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
     
+    // -------modal------
+    let clickModal = document.querySelector('.header__login');
+    clickModal.addEventListener('click', () => {
+      document.querySelector('.modal').classList.add('modal_active');
+      document.body.classList.toggle('stop-scrolling');
+    })
     
   } catch (error) {
     console.log(error)
