@@ -160,10 +160,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     
     // -------modal------
-    let clickModal = document.querySelector('.header__login');
+    const clickModal = document.querySelector('.header__login');
+    const modal = document.querySelector('.modal');
+
     clickModal.addEventListener('click', () => {
-      document.querySelector('.modal').classList.add('modal_active');
-      document.body.classList.toggle('stop-scrolling');
+      modal.classList.add('modal_active');
+      document.body.classList.add('stop-scrolling');
+    });
+
+    let closeModal = document.querySelector('.menu__close');
+    closeModal.addEventListener('click', () => {
+      modal.classList.remove('modal_active');
+      document.body.classList.remove('stop-scrolling');
     })
     
   } catch (error) {
