@@ -1518,7 +1518,10 @@ button:hover {
 }
 
 /* --------modal window-------- */
-.modal {
+
+
+.modal,
+.consultation {
   position: absolute;
   top: -1000px;
   right: 0;
@@ -1716,4 +1719,24 @@ body.stop-scrolling {
 
 .modal__item-link:hover svg path {
   fill: var(--color-orange);
+}
+
+.consultation .modal-content {
+  width: 100%;
+}
+
+.consultation .modal__form {
+  margin-bottom: 0;
+}
+
+.consultation .modal__box {
+  margin-bottom: 48px;
+}
+
+.consultation .modal__box:first-child {
+  margin-bottom: 24px;
+}
+
+.consultation .modal-content::after {
+  bottom: 126px;
 }

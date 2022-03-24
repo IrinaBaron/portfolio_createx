@@ -168,11 +168,25 @@ document.addEventListener('DOMContentLoaded', () => {
       document.body.classList.add('stop-scrolling');
     });
 
-    let closeModal = document.querySelector('.menu__close');
+    let closeModal = document.querySelector('.modal .menu__close');
     closeModal.addEventListener('click', () => {
       modal.classList.remove('modal_active');
       document.body.classList.remove('stop-scrolling');
-    })
+    });
+
+    const clickConsult = document.querySelector('.header__btn');
+    const consultation = document.querySelector('.consultation');
+
+    clickConsult.addEventListener('click', () => {
+      consultation.classList.add('modal_active');
+      document.body.classList.add('stop-scrolling');
+    });
+
+    const closeConsult = document.querySelector('.consultation .menu__close');
+    closeConsult.addEventListener('click', () => {
+      consultation.classList.remove('modal_active');
+      document.body.classList.remove('stop-scrolling');
+    });
     
   } catch (error) {
     console.log(error)
