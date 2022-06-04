@@ -169,7 +169,7 @@
   
 } */
 
-.miss-events__check:checked + .miss-events__check_text::after {
+.questions .miss-events__check:checked + .miss-events__check_text::after {
   
   /* background-color: var(--color-orange); */
   opacity: 1;
