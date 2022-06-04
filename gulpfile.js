@@ -1,6 +1,5 @@
 'use strict';
 
-
 import gulp from 'gulp';
 const { series, parallel } = pkg;
 import pkg from 'gulp';
